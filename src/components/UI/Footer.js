@@ -1,10 +1,12 @@
 import {
-  FaMapMarkerAlt,
   FaFacebook,
   FaTwitter,
   FaYoutube,
   FaInstagram,
+  FaStar,
 } from "react-icons/fa";
+import QuickLinks from "./QuickLinks";
+import Updates from "./Updates";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -17,8 +19,6 @@ export default function Footer() {
             love. We are a community of the Lord
           </p>
           <div className="socials">
-            <FaYoutube className="headerYoutube" />
-            <FaInstagram className="headerInstagram" />
             <div className="socialIcon">
               <FaFacebook className="facebook" />
             </div>
@@ -26,22 +26,22 @@ export default function Footer() {
               <FaTwitter className="twitter" />
             </div>
             <div className="socialIcon">
-              <i className="fa-brands fa-youtube youtube" />
+              <FaYoutube className="youtube" />
             </div>
             <div className="socialIcon">
-              <i className="fa-brands fa-instagram instagram" />
+              <FaInstagram className="instagram" />
             </div>
           </div>
         </div>
         <div className="footerLinks">
           <h4 className="footerLinksHeader">Quick Links</h4>
-          <p className="link">
-            <a href="#" className="link1">
-              <i className="fa-solid fa-star footerStarIcon" />
-              Who are we?
-            </a>
-          </p>
-          <p className="link">
+          <QuickLinks />
+          <QuickLinks />
+          <QuickLinks />
+          <QuickLinks />
+          <QuickLinks />
+          <QuickLinks />
+          {/* <p className="link">
             <a href="#" className="link2">
               <i className="fa-solid fa-star footerStarIcon" />
               Who are we?
@@ -70,24 +70,13 @@ export default function Footer() {
               <i className="fa-solid fa-star footerStarIcon" />
               Who are we?
             </a>
-          </p>
+          </p> */}
         </div>
         <div className="footerUpdates">
           <h4 className="footerUpdatesHeader">Updates</h4>
-          <div className="firstUpdate">
-            <div className="updateImg" />
-            <div className="footerUpdateContainer">
-              <h5 className="updateHeader">
-                Giving To God - Active ways to get blessed
-              </h5>
-              <p className="footerUpdateDate">
-                <i className="fa-solid fa-calendar-plus calendarIcon" /> October
-                16, 2020
-              </p>
-            </div>
-          </div>
+          <Updates />
           <hr />
-          <div className="secondUpdate">
+          {/* <div className="secondUpdate">
             <div className="updateImg" />
             <div className="footerUpdatecontainer">
               <h5 className="updateHeader">
@@ -98,7 +87,8 @@ export default function Footer() {
                 16, 2020
               </p>
             </div>
-          </div>
+          </div> */}
+          <Updates />
         </div>
         <div className="footerNewsletter">
           <h4 className="footerNewsletterHeader">Newsletter</h4>
