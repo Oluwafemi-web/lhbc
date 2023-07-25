@@ -160,11 +160,12 @@
 .banner {
   width: 100%;
   height: 100vh;
+  text-align: center;
   display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.5rem 4rem;
   background: linear-gradient(#011635be, #011635be),
     url(../images/Placeholder4.jpeg) fixed;
 }
@@ -1290,7 +1291,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 14rem 4rem;
   }
 
   .bannerFirstText {
@@ -10637,10 +10638,11 @@
 /* slick carousel styling */
 .slick-next {
   right: 25px !important;
+  z-index: 3;
 }
 .slick-prev {
   left: 25px !important;
-  z-index: 1;
+  z-index: 3;
 }
 .slick-prev::before,
 .slick-next::before {
