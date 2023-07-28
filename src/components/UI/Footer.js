@@ -7,118 +7,119 @@ import {
 } from "react-icons/fa";
 import QuickLinks from "./QuickLinks";
 import Updates from "./Updates";
+import classes from "../../css/Footer.module.css";
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footerContainer">
-        <div className="footerAbout">
-          <h4 className="footerAboutHeader">About US</h4>
-          <p className="footerAboutText">
+    <footer className={classes.footer}>
+      <div className={classes.footerContainer}>
+        <div className={classes.footerAbout}>
+          <h4 className={classes.footerAboutHeader}>About US</h4>
+          <p className={classes.footerAboutText}>
             We are a community of people loving each other and our Lord. Being
             completely humble gentle, patient and bearing with one another in
             love. We are a community of the Lord
           </p>
-          <div className="socials">
-            <div className="socialIcon">
-              <FaFacebook className="facebook" />
+          <div className={classes.socials}>
+            <div className={classes.socialIcon}>
+              <FaFacebook className={classes.facebook} />
             </div>
-            <div className="socialIcon">
-              <FaTwitter className="twitter" />
+            <div className={classes.socialIcon}>
+              <FaTwitter className={classes.twitter} />
             </div>
-            <div className="socialIcon">
-              <FaYoutube className="youtube" />
+            <div className={classes.socialIcon}>
+              <FaYoutube className={classes.youtube} />
             </div>
-            <div className="socialIcon">
-              <FaInstagram className="instagram" />
+            <div className={classes.socialIcon}>
+              <FaInstagram className={classes.instagram} />
             </div>
           </div>
         </div>
-        <div className="footerLinks">
-          <h4 className="footerLinksHeader">Quick Links</h4>
+        <div className={classes.footerLinks}>
+          <h4 className={classes.footerLinksHeader}>Quick Links</h4>
           <QuickLinks />
           <QuickLinks />
           <QuickLinks />
           <QuickLinks />
           <QuickLinks />
           <QuickLinks />
-          {/* <p className="link">
-            <a href="#" className="link2">
-              <i className="fa-solid fa-star footerStarIcon" />
+          {/* <p className={classes.link">
+            <a href="#" className={classes.link2">
+              <i className={classes.fa-solid fa-star footerStarIcon" />
               Who are we?
             </a>
           </p>
-          <p className="link">
-            <a href="#" className="link3">
-              <i className="fa-solid fa-star footerStarIcon" />
+          <p className={classes.link">
+            <a href="#" className={classes.link3">
+              <i className={classes.fa-solid fa-star footerStarIcon" />
               Who are we?
             </a>
           </p>
-          <p className="link">
-            <a href="#" className="link4">
-              <i className="fa-solid fa-star footerStarIcon" />
+          <p className={classes.link">
+            <a href="#" className={classes.link4">
+              <i className={classes.fa-solid fa-star footerStarIcon" />
               Who are we?
             </a>
           </p>
-          <p className="link">
-            <a href="#" className="link5">
-              <i className="fa-solid fa-star footerStarIcon" />
+          <p className={classes.link">
+            <a href="#" className={classes.link5">
+              <i className={classes.fa-solid fa-star footerStarIcon" />
               Who are we?
             </a>
           </p>
-          <p className="link">
-            <a href="#" className="link6">
-              <i className="fa-solid fa-star footerStarIcon" />
+          <p className={classes.link">
+            <a href="#" className={classes.link6">
+              <i className={classes.fa-solid fa-star footerStarIcon" />
               Who are we?
             </a>
           </p> */}
         </div>
-        <div className="footerUpdates">
-          <h4 className="footerUpdatesHeader">Updates</h4>
+        <div className={classes.footerUpdates}>
+          <h4 className={classes.footerUpdatesHeader}>Updates</h4>
           <Updates />
           <hr />
-          {/* <div className="secondUpdate">
-            <div className="updateImg" />
-            <div className="footerUpdatecontainer">
-              <h5 className="updateHeader">
+          {/* <div className={classes.secondUpdate">
+            <div className={classes.updateImg" />
+            <div className={classes.footerUpdatecontainer">
+              <h5 className={classes.updateHeader">
                 Giving To God - Active ways to get blessed
               </h5>
-              <p className="footerUpdateDate">
-                <i className="fa-solid fa-calendar-plus calendarIcon" /> October
+              <p className={classes.footerUpdateDate">
+                <i className={classes.fa-solid fa-calendar-plus calendarIcon" /> October
                 16, 2020
               </p>
             </div>
           </div> */}
           <Updates />
         </div>
-        <div className="footerNewsletter">
-          <h4 className="footerNewsletterHeader">Newsletter</h4>
-          <p className="footerNewsletterText">
-            Sign up to receive daily updates and live feeds.{" "}
+        <div className={classes.footerNewsletter}>
+          <h4 className={classes.footerNewsletterHeader}>Newsletter</h4>
+          <p className={classes.footerNewsletterText}>
+            Sign up to receive daily updates and live feeds.
             <span>
               Your Information is private and safe. We won't spam you.
             </span>
           </p>
-          <div className="subscribe">
+          <div className={classes.subscribe}>
             <input
               type="email"
               name=""
               id=""
               placeholder="Email Address"
-              className="newsletterEmail"
+              className={classes.newsletterEmail}
             />
-            <button type="submit" className="newsletterButton">
+            <button type="submit" className={classes.newsletterButton}>
               Sign Up
             </button>
           </div>
         </div>
       </div>
       <dt />
-      <div className="copyright-Container">
-        <div className="copyrightContainer">
-          <p className="copyright">
+      <div className={classes["copyright - Container"]}>
+        <div className={classes.copyrightContainer}>
+          <p className={classes.copyright}>
             Copyright | 2020 | Living Hope Baptist Church
           </p>
-          <p className="privacyAndTerms">
+          <p className={classes.privacyAndTerms}>
             Privacy Policy | Terms &amp; Conditions
           </p>
         </div>

@@ -1,0 +1,2493 @@
+.footer {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 0rem 0rem 0rem;
+  background: linear-gradient(#011635be, #011635be),
+    url(../images/Placeholder4.jpeg) fixed;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  align-items: start;
+  justify-items: center;
+  width: 280px;
+  min-height: 10rem;
+  /* padding:0rem 0.5rem 0rem 0.5rem; */
+}
+
+.footerAbout {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.footerAboutHeader {
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.footerAboutText {
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.socials {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.socialIcon {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.facebook,
+.instagram,
+.youtube,
+.twitter {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.footerLinks {
+  width: 95%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0.8rem 0rem 0.8rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.footerLinksHeader {
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.link {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0.7rem 0rem 0rem 0rem;
+}
+
+.link1,
+.link2,
+.link3,
+.link4,
+.link5,
+.link6 {
+  color: inherit;
+}
+
+.footerStarIcon {
+  font-size: 1rem;
+  color: #ac0909;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.footerUpdates {
+  width: 95%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+  position: relative;
+}
+
+.footerUpdatesHeader {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.firstUpdate {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.secondUpdate {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.footerUpdates hr {
+  width: 95%;
+  height: 1px;
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.updateImg {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  background: url(../images/Rectangle31.png) center/cover no-repeat;
+}
+
+.updateHeader {
+  width: 10rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.footerUpdateDate {
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem 0rem 0rem 0.5rem;
+}
+
+.fa-calendar-plus {
+  color: #ac0909;
+  font-size: 1rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.footerNewsletter {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0rem 1.5rem 0rem;
+}
+
+.footerNewsletterHeader {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footerNewsletterText {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.newsletterEmail {
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid #b3aeae;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  background: #fff;
+}
+
+.newsletterButton {
+  background: #8b0000;
+  color: #fff;
+  opacity: 0.9;
+  width: 5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.copyright-Container {
+  width: 100%;
+  background: #020d1e;
+  display: flex;
+  justify-content: center;
+}
+
+.copyrightContainer {
+  width: 100%;
+  height: 3.5rem;
+  background: #020d1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 0rem 0rem 0.2rem 0rem;
+}
+
+.privacyAndTerms {
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 0.2rem 0rem 0rem 0rem;
+}
+@media screen and (min-width: 375px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 0rem 0rem 0rem;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    align-items: start;
+    justify-items: center;
+    width: 375px;
+    min-height: 10rem;
+    /* padding:0rem 0.5rem 0rem 0.5rem; */
+  }
+
+  .footerAbout {
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 0rem 1rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerAboutHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+
+  .socials {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0.8rem 0rem 0.8rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem 0rem 1rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .firstUpdate {
+    width: 90%;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .secondUpdate {
+    width: 90%;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .footerUpdates hr {
+    width: 85%;
+    height: 1px;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+
+  .updateImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .updateHeader {
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.8rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.1rem;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.9rem;
+    height: 3rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyright-Container {
+    width: 100%;
+    background: #020d1e;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyrightContainer {
+    width: 100%;
+    height: 3.5rem;
+    background: #020d1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0.2rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.2rem 0rem 0rem 0rem;
+  }
+}
+@media screen and (min-width: 476px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 0rem 0rem 0rem;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    align-items: start;
+    justify-items: center;
+    width: 476px;
+    min-height: 10rem;
+    /* padding:0rem 0.5rem 0rem 0.5rem; */
+  }
+
+  .footerAbout {
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 0rem 1rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerAboutHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+
+  .socials {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0.8rem 0rem 0.8rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem 0rem 1rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .firstUpdate {
+    width: 90%;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .secondUpdate {
+    width: 90%;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .footerUpdates hr {
+    width: 85%;
+    height: 1px;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+
+  .updateImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .updateHeader {
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.8rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.1rem;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.9rem;
+    height: 3rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyright-Container {
+    width: 100%;
+    background: #020d1e;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyrightContainer {
+    width: 100%;
+    height: 3.5rem;
+    background: #020d1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0.2rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.2rem 0rem 0rem 0rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0rem 2rem;
+    justify-items: center;
+    align-items: center;
+    width: 576px;
+    padding: 0rem 1rem 1rem 1rem;
+  }
+
+  .footerAbout {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 0.8rem 0rem 0.8rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .footerAboutHeader {
+    align-self: center;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .socials {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem 0.5rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0.8rem 0rem 0.8rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    grid-area: 1/2/1/3;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .firstUpdate,
+  .secondUpdate {
+    width: 17rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerUpdates hr {
+    width: 95%;
+  }
+
+  .updateImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .updateHeader {
+    width: 10rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.5rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.9rem;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyrightContainer {
+    width: 100%;
+    height: 3.5rem;
+    background: #020d1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0.2rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.2rem 0rem 0rem 0rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0rem 2rem;
+    justify-items: center;
+    align-items: center;
+    width: 768x;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .footerAbout {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 0.8rem 0rem 0.8rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .footerAboutHeader {
+    align-self: center;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .socials {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem 0.5rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0.8rem 0rem 0.8rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    grid-area: 1/2/1/3;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .firstUpdate,
+  .secondUpdate {
+    width: 17rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .updateImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .updateHeader {
+    width: 10rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.5rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.9rem;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyrightContainer {
+    width: 100%;
+    height: 3.5rem;
+    background: #020d1e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0rem 1rem;
+    justify-items: center;
+    align-items: start;
+    width: 900px;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+
+  .footerAbout {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerAboutHeader {
+    align-self: center;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .socials {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem 0.5rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    grid-area: 1/2/1/3;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .firstUpdate,
+  .secondUpdate {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+
+  .footerUpdates hr {
+    width: 95%;
+  }
+
+  .updateImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .footerUpdateContainer {
+    width: 70%;
+  }
+
+  .updateHeader {
+    width: 10rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.5rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.9rem;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyrightContainer {
+    width: 100%;
+    height: 3.5rem;
+    background: #020d1e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0.2rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.2rem 0rem 0rem 0rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0rem 1rem;
+    align-items: start;
+    width: 1024px;
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  .footerAbout {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 0.8rem 1rem 0.8rem;
+    margin: 0rem 0rem 0rem 1rem;
+  }
+
+  .footerAboutHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: left;
+  }
+
+  .socials {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem 0.5rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    grid-area: 1/2/2/3;
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0.8rem 1rem 0.8rem;
+    margin: 0rem 0rem 0rem 00rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    grid-area: 1/3/2/4;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .firstUpdate {
+    width: 17rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .secondUpdate {
+    width: 17rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 0rem 2rem 0rem;
+  }
+
+  .updateImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .updateHeader {
+    width: 10rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.5rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    grid-area: auto;
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 0rem 1.5rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.9rem;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyrightContainer {
+    grid-area: 2/1/3/5;
+    width: 100%;
+    height: 3.5rem;
+    background: #020d1e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 4rem 1rem;
+    align-items: start;
+    width: 100%;
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  .footerAbout {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerAboutHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: left;
+    line-height: 1.7rem;
+  }
+
+  .socials {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem 0.5rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    grid-area: 1/2/2/3;
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    margin: 0rem 0rem 0rem 00rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    grid-area: 1/3/2/4;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerUpdates hr {
+    width: 75%;
+  }
+
+  .firstUpdate,
+  .secondUpdate {
+    width: 17rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .updateImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .updateHeader {
+    width: 10rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.5rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    grid-area: auto;
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 0rem 1.5rem 0rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.9rem;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyrightContainer {
+    grid-area: 2/1/3/5;
+    width: 100%;
+    height: 3.5rem;
+    background: #020d1e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 6rem;
+    justify-items: center;
+  }
+
+  .copyright {
+    justify-self: right;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    justify-self: left;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 4rem 1rem;
+    align-items: start;
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  .footerAbout {
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 0.8rem 1rem 0.8rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerAboutHeader {
+    font-size: 1.7rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: left;
+    line-height: 1.8rem;
+  }
+
+  .socials {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem 0.5rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    grid-area: 1/2/2/3;
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0.8rem 1rem 0.8rem;
+    margin: 0rem 0rem 0rem 00rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1.7rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    grid-area: 1/3/2/4;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerUpdates hr {
+    width: 75%;
+  }
+
+  .firstUpdate,
+  .secondUpdate {
+    width: 17rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  .updateImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .updateHeader {
+    width: 11rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.5rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    grid-area: auto;
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 0rem 1.5rem 0rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+    border-radius: 0.5rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.9rem;
+    height: 3.5rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 8rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyright-Container {
+    width: 100%;
+    background: #020d1e;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyrightContainer {
+    grid-area: 2/1/3/5;
+    width: 1400px;
+    height: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+@media screen and (max-width: 279px) and (min-height: 300px) {
+  .footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 0rem 0rem 0rem;
+    background: linear-gradient(#011635be, #011635be),
+      url(../images/Placeholder4.jpeg) fixed;
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    align-items: start;
+    justify-items: center;
+    width: 220px;
+    min-height: 10rem;
+    /* padding:0rem 0.5rem 0rem 0.5rem; */
+  }
+
+  .footerAbout {
+    width: 220px;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerAboutHeader {
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .footerAboutText {
+    font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .socials {
+    width: 90%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0rem 0rem 0rem;
+  }
+
+  .socialIcon {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .facebook,
+  .instagram,
+  .youtube,
+  .twitter {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .footerLinks {
+    width: 220px;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0.8rem 0rem 0.8rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .footerLinksHeader {
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+    color: #fff;
+    margin: 0.1rem 0rem 0rem 0rem;
+  }
+
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5,
+  .link6 {
+    color: inherit;
+  }
+
+  .footerUpdates {
+    width: 220px;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    position: relative;
+  }
+
+  .footerUpdatesHeader {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .firstUpdate {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+  }
+
+  .secondUpdate {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+  }
+
+  .footerUpdates hr {
+    width: 95%;
+    height: 1px;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+
+  .updateImg {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    background: url(../images/Rectangle31.png) center/cover no-repeat;
+  }
+
+  .updateHeader {
+    width: 8rem;
+    color: #fff;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0.5rem 0.5rem;
+  }
+
+  .footerUpdateDate {
+    color: #fff;
+    font-size: 0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0rem 0rem 0.5rem;
+  }
+
+  .footerNewsletter {
+    width: 220px;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0rem 1.5rem 0rem;
+  }
+
+  .footerNewsletterHeader {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .footerNewsletterText {
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 0.7rem;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    line-height: 1rem;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+    border-radius: 0.5rem;
+  }
+
+  .newsletterEmail {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 0.7rem;
+    height: 2rem;
+    width: 100%;
+    border: 1px solid #b3aeae;
+    background: #fff;
+  }
+
+  .newsletterButton {
+    background: #8b0000;
+    color: #fff;
+    opacity: 0.9;
+    width: 7rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 0.7rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+
+  .copyright-Container {
+    width: 100%;
+    background: #020d1e;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyrightContainer {
+    width: 100%;
+    height: 3.5rem;
+    background: #020d1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 0rem 0rem 0.2rem 0rem;
+  }
+
+  .privacyAndTerms {
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 0.2rem 0rem 0rem 0rem;
+  }
+}

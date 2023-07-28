@@ -1,7 +1,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaAngleRight } from "react-icons/fa";
+import classes from "../../../css/style.module.css";
+import "../../../css/slick.css";
+import "../../../css/style.module.css";
+
 import img1 from "../../../images/Placeholder4.jpeg";
 export default function Carousel() {
   const settings = {
@@ -17,53 +20,53 @@ export default function Carousel() {
     slidesToScroll: 1,
   };
   return (
-    <Slider {...settings} className="hero">
-      {/* <div className="hero"> */}
-      <div className="banner">
-        <h3 className="bannerFirstText">WE HELP GET THINGS DONE</h3>
-        <h1 className="bannerSecondText">GOD GIVES US POWER</h1>
-        <p className="bannerThirdText">
+    <Slider {...settings} className={classes.hero}>
+      {/* <div className={classes.hero"> */}
+      <div className={classes.banner}>
+        <h3 className={classes.bannerFirstText}>WE HELP GET THINGS DONE</h3>
+        <h1 className={classes.bannerSecondText}>GOD GIVES US POWER</h1>
+        <p className={classes.bannerThirdText}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempore
           recusandae doloribus exercitationem nam cum nihil iure voluptatum
           officia ratione eveniet eum, dolorem enim quaerat incidunt debitis
           maiores modi! Error?
         </p>
-        <button className="bannerButton">
-          <a href="#" className="bannerButton">
+        <button className={classes.bannerButton}>
+          <a href="#" className={classes.bannerButton}>
             CONTACT US
           </a>
         </button>
       </div>
       {/* </div> */}
-      {/* <div className="hero"> */}
-      <div className="banner">
-        <h3 className="bannerFirstText">WE HELP GET THINGS DONE</h3>
-        <h1 className="bannerSecondText">GOD GIVES US POWER</h1>
-        <p className="bannerThirdText">
+      {/* <div className={classes.hero"> */}
+      <div className={classes.banner}>
+        <h3 className={classes.bannerFirstText}>WE HELP GET THINGS DONE</h3>
+        <h1 className={classes.bannerSecondText}>GOD GIVES US POWER</h1>
+        <p className={classes.bannerThirdText}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempore
           recusandae doloribus exercitationem nam cum nihil iure voluptatum
           officia ratione eveniet eum, dolorem enim quaerat incidunt debitis
           maiores modi! Error?
         </p>
-        <button className="bannerButton">
-          <a href="#" className="bannerButton">
+        <button className={classes.bannerButton}>
+          <a href="#" className={classes.bannerButton}>
             CONTACT US
           </a>
         </button>
       </div>
       {/* </div> */}
-      {/* <div className="hero"> */}
-      <div className="banner">
-        <h3 className="bannerFirstText">WE HELP GET THINGS DONE</h3>
-        <h1 className="bannerSecondText">GOD GIVES US POWER</h1>
-        <p className="bannerThirdText">
+      {/* <div className={classes.hero"> */}
+      <div className={classes.banner}>
+        <h3 className={classes.bannerFirstText}>WE HELP GET THINGS DONE</h3>
+        <h1 className={classes.bannerSecondText}>GOD GIVES US POWER</h1>
+        <p className={classes.bannerThirdText}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempore
           recusandae doloribus exercitationem nam cum nihil iure voluptatum
           officia ratione eveniet eum, dolorem enim quaerat incidunt debitis
           maiores modi! Error?
         </p>
-        <button className="bannerButton">
-          <a href="#" className="bannerButton">
+        <button className={classes.bannerButton}>
+          <a href="#" className={classes.bannerButton}>
             CONTACT US
           </a>
         </button>

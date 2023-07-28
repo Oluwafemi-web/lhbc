@@ -1,9 +1,11 @@
+import classes from "../../css/style.module.css";
+
 export default function OrganizationItems() {
   return (
-    <div className="menUnion union">
-      <div className="menUnionImg unionImg" />
-      <h5 className="menUnionHeader unionHeader">Men's Missionary Union</h5>
-      <p className="menUnionText unionText">
+    <div className={classes["union"]}>
+      <div className={classes["unionImg"]} />
+      <h5 className={classes["unionHeader"]}>Men's Missionary Union</h5>
+      <p className={classes["unionText"]}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam
         expedita antium architecto, est quae voluptatibus deleniti totam.
         Molestias atque nihil cque voluptates esse deleniti voluptas, quae
@@ -11,7 +13,7 @@ export default function OrganizationItems() {
         ullam ukkad kliad neid buramk miksea losuy veatis...
       </p>
       <p>
-        <a href="#" className="youthUnionDetails unionDetails">
+        <a href="#" className={classes["unionDetails"]}>
           Read More
         </a>
       </p>

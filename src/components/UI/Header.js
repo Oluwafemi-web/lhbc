@@ -6,75 +6,87 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import classes from "../../css/Header.module.css";
 export default function Header() {
   return (
-    <header className="header">
-      <div className="headerContainer">
-        <div className="headerSocialContainer">
-          <p className="headerChurchName">
-            <FaMapMarkerAlt className="fa-location-dot" />
+    <header className={classes.header}>
+      <div className={classes.headerContainer}>
+        <div className={classes.headerSocialContainer}>
+          <p className={classes.headerChurchName}>
+            <FaMapMarkerAlt className={classes["fa-location-dot"]} />
             LHBC Elelenwo Port Harcourt
           </p>
-          <div className="headerSocials">
-            <FaFacebook className="headerFacebook" />
-            <FaTwitter className="headerTwitter" />
-            <FaYoutube className="headerYoutube" />
-            <FaInstagram className="headerInstagram" />
+          <div className={classes.headerSocials}>
+            <FaFacebook className={classes.headerFacebook} />
+            <FaTwitter className={classes.headerTwitter} />
+            <FaYoutube className={classes.headerYoutube} />
+            <FaInstagram className={classes.headerInstagram} />
           </div>
         </div>
-        <div className="navbar">
-          <div className="headerLogo" />
-          <input type="checkbox" name="" id="hamburger" className="hamburger" />
-          <label htmlFor="hamburger" className="hamburgerMenu">
-            <span className="hamburgerLine" />
+        <div className={classes.navbar}>
+          <div className={classes.headerLogo} />
+          <input
+            type="checkbox"
+            name=""
+            id="hamburger"
+            className={classes.hamburger}
+          />
+          <label htmlFor="hamburger" className={classes.hamburgerMenu}>
+            <span className={classes.hamburgerLine} />
           </label>
-          <ul className="navMenu">
-            <li className="headerUl">
+          <ul className={classes.navMenu}>
+            <li className={classes.headerUl}>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `headerHome ${isActive ? "active" : undefined}`
+                  isActive ? `${classes.headerHome} active` : classes.headerHome
                 }
                 end
               >
                 HOME
               </NavLink>
             </li>
-            <li className="headerUl ">
+            <li className={classes.headerUl}>
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `headerAbout ${isActive ? "active" : undefined}`
+                  isActive
+                    ? `${classes.headerAbout} active`
+                    : classes.headerAbout
                 }
               >
                 ABOUT
               </NavLink>
             </li>
-            <li className="headerUl ">
+            <li className={classes.headerUl}>
               <NavLink
                 to="/gallery"
                 className={({ isActive }) =>
-                  `headerGallery ${isActive ? "active" : undefined}`
+                  isActive
+                    ? `${classes.headerGallery} active`
+                    : classes.headerGallery
                 }
               >
                 GALLERY
               </NavLink>
             </li>
-            <li className="headerUl ">
+            <li className={classes.headerUl}>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `headerContact ${isActive ? "active" : undefined}`
+                  isActive
+                    ? `${classes.headerContact} active`
+                    : classes.headerContact
                 }
               >
                 CONTACT
               </NavLink>
             </li>
-            <li className="headerUl ">
+            <li className={classes.headerUl}>
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `headerBlog ${isActive ? "active" : undefined}`
+                  isActive ? `${classes.headerBlog} active` : classes.headerBlog
                 }
               >
                 BLOG
