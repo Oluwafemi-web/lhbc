@@ -1,5 +1,5 @@
-import OrganizationItems from "../../UI/OrganizationItems";
-import classes from "../../../css/style.module.css";
+import OrganizationItems from "./OrganizationItems";
+import classes from "../../css/style.module.css";
 
 export default function Organizations() {
   return (

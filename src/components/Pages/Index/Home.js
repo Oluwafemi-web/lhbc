@@ -2,7 +2,7 @@ import Carousel from "./Carousel";
 import IndexAbout from "./IndexAbout";
 import Donation from "./Donation";
 import Sermon from "./Sermon";
-import Organizations from "./Organizations";
+import Organizations from "../../UI/Organizations";
 import IndexContact from "./IndexContact";
 import IndexBlog from "./IndexBlog";
 export default function Home() {
