@@ -1,4 +1,4 @@
-import classes from "../../../css/about.module.css";
+import classes from "../../css/about.module.css";
 import { FaCalendarPlus, FaLocationArrow, FaMapPin } from "react-icons/fa";
 
 export default function NextEvent() {
