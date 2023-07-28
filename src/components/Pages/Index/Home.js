@@ -7,7 +7,7 @@ import IndexContact from "./IndexContact";
 import IndexBlog from "./IndexBlog";
 export default function Home() {
   return (
-    <div className="main">
+    <>
       <Carousel />
       <IndexAbout />
       <Donation />
@@ -15,6 +15,6 @@ export default function Home() {
       <Organizations />
       <IndexContact />
       <IndexBlog />
-    </div>
+    </>
   );
 }

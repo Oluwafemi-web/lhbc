@@ -5,6 +5,7 @@ import {
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <header className="header">
@@ -29,29 +30,55 @@ export default function Header() {
           </label>
           <ul className="navMenu">
             <li className="headerUl">
-              <a href="./index.html" className="headerHome">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `headerHome ${isActive ? "active" : undefined}`
+                }
+                end
+              >
                 HOME
-              </a>
+              </NavLink>
             </li>
             <li className="headerUl ">
-              <a href="./about.html" className="headerAbout">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  `headerAbout ${isActive ? "active" : undefined}`
+                }
+              >
                 ABOUT
-              </a>
+              </NavLink>
             </li>
             <li className="headerUl ">
-              <a href="./gallery.html" className="headerGallery">
+              <NavLink
+                to="/gallery"
+                className={({ isActive }) =>
+                  `headerGallery ${isActive ? "active" : undefined}`
+                }
+              >
                 GALLERY
-              </a>
+              </NavLink>
             </li>
             <li className="headerUl ">
-              <a href="./contact.html" className="headerContact">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  `headerContact ${isActive ? "active" : undefined}`
+                }
+              >
                 CONTACT
-              </a>
+              </NavLink>
             </li>
             <li className="headerUl ">
-              <a href="./blog.html" className="headerBlog">
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  `headerBlog ${isActive ? "active" : undefined}`
+                }
+              >
                 BLOG
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
