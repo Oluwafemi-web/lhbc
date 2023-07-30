@@ -34,8 +34,8 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem 4rem;
-  background: linear-gradient(#011635be, #011635be),
-    url(../images/Placeholder4.jpeg) fixed;
+  /* background: linear-gradient(#011635be, #011635be),
+    url(../images/Placeholder4.jpeg) fixed; */
 }
 
 .bannerFirstText {
@@ -5616,7 +5616,7 @@
   }
 
   .banner {
-    width: 1400px;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
