@@ -14,7 +14,12 @@ export default function BlogItem(props) {
   };
   return (
     <div className={classes.post1}>
-      <div className={classes.blogImg}>
+      <div
+        className={classes.blogImg}
+        style={{
+          background: `url(${props.image}) center/cover no-repeat`,
+        }}
+      >
         <p className={classes.postDate}>{props.date}</p>
       </div>
 

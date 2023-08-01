@@ -1,23 +1,43 @@
 import { FaStar } from "react-icons/fa";
 import classes from "../../../css/style.module.css";
+import { PortableText } from "@portabletext/react";
 
-export default function Donation() {
+export default function Donation(props) {
+  const donate = {
+    types: {
+      block: ({ value }) => {
+        return (
+          <h1 className={classes.donationHeader}>{value.children[0].text}</h1>
+        );
+      },
+    },
+  };
+  const donatedetail = {
+    types: {
+      block: ({ value }) => {
+        return <p className={classes.donationText}>{value.children[0].text}</p>;
+      },
+    },
+  };
   return (
-    <div className={classes.donation}>
-      <FaStar className={classes["fa-star"]} />
-      {/* <i className={classes.fa-solid fa-star} /> */}
-      <h1 className={classes.donationHeader}>
-        "Pray! and listen to God! You can do this alone, but find somebody to do
-        it with you"
-      </h1>
-      <p className={classes.donationText}>
-        As you give to God, he's going to bless you
-      </p>
-      <button className={classes.donationButton1}>
-        <a href="#" className={classes.donationButton}>
-          DONATE
-        </a>
-      </button>
-    </div>
+    props.donationDetails &&
+    props.donationDetails.map((item, index) => (
+      <div
+        className={classes.donation}
+        key={index}
+        style={{
+          background: `linear-gradient(#00000081, #00000081), url(${item.image.asset.url}) center/cover no-repeat`,
+        }}
+      >
+        <FaStar className={classes["fa-star"]} />
+        <PortableText value={item.heading} components={donate} />
+        <PortableText value={item.description} components={donatedetail} />
+        <button className={classes.donationButton1}>
+          <a href="#" className={classes.donationButton}>
+            DONATE
+          </a>
+        </button>
+      </div>
+    ))
   );
 }
