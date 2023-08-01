@@ -212,7 +212,7 @@
 .aboutImg {
   width: 100%;
   height: 15rem;
-  background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+  /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
   margin: 2rem 0rem 0rem 0rem;
   border: 3px solid goldenrod;
   border-radius: 0.3rem;
@@ -514,8 +514,8 @@
   justify-items: center;
   align-items: start;
   padding: 1rem 0.5rem 1rem 0.5rem;
-  background: linear-gradient(#00000081, #00000081),
-    url(../images/Placeholder2.jpeg) center/cover no-repeat;
+  /* background: linear-gradient(#00000081, #00000081),
+    url(../images/Placeholder2.jpeg) center/cover no-repeat; */
 }
 
 .contactContainer {
@@ -925,7 +925,7 @@
   .aboutImg {
     width: 100%;
     height: 18rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 2rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.3rem;
@@ -1154,7 +1154,7 @@
     width: 100%;
     height: 50%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -1198,8 +1198,8 @@
     justify-items: center;
     align-items: start;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+    /* background: linear-gradient(#00000081, #00000081),
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {
@@ -1604,7 +1604,7 @@
   .aboutImg {
     width: 100%;
     height: 18rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 2rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.3rem;
@@ -1833,7 +1833,7 @@
     width: 100%;
     height: 50%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -1877,8 +1877,8 @@
     justify-items: center;
     align-items: start;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+    /* background: linear-gradient(#00000081, #00000081),
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {
@@ -2277,7 +2277,7 @@
   .aboutImg {
     width: 100%;
     height: 18rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 2rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.3rem;
@@ -2520,7 +2520,7 @@
     width: 100%;
     height: 50%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -2562,9 +2562,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0rem 1.5rem 0rem;
+    /* padding: 1rem 0rem 1.5rem 0rem;
     background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {
@@ -2971,7 +2971,7 @@
   .aboutImg {
     width: 100%;
     height: 21rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 0rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.3rem;
@@ -3219,7 +3219,7 @@
     width: 100%;
     height: 50%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -3262,8 +3262,8 @@
     align-items: center;
     justify-content: center;
     padding: 2rem 0rem 2rem 0rem;
-    background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+    /* background: linear-gradient(#00000081, #00000081),
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {
@@ -3672,7 +3672,7 @@
   .aboutImg {
     width: 90%;
     height: 21.5rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 0rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.5rem;
@@ -3936,7 +3936,7 @@
     width: 100%;
     height: 50%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -3979,8 +3979,8 @@
     align-items: center;
     justify-content: center;
     padding: 2rem 0rem 2rem 0rem;
-    background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+    /* background: linear-gradient(#00000081, #00000081),
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {
@@ -4392,7 +4392,7 @@
   .aboutImg {
     width: 24rem;
     height: 23rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 2rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.3rem;
@@ -4634,7 +4634,7 @@
     width: 100%;
     height: 50%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -4676,8 +4676,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+    /* background: linear-gradient(#00000081, #00000081),
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {
@@ -5099,7 +5099,7 @@
   .aboutImg {
     width: 24rem;
     height: 23rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 2rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.3rem;
@@ -5347,7 +5347,7 @@
     width: 100%;
     height: 50%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -5387,8 +5387,8 @@
     min-height: 10vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+    /* background: linear-gradient(#00000081, #00000081),
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {
@@ -5802,7 +5802,7 @@
   .aboutImg {
     width: 24rem;
     height: 23rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 2rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.3rem;
@@ -6050,7 +6050,7 @@
     width: 100%;
     height: 50%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -6091,8 +6091,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+    /* background: linear-gradient(#00000081, #00000081),
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {
@@ -6558,7 +6558,7 @@
   .aboutImg {
     width: 90%;
     height: 10rem;
-    background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat;
+    /* background: url(../images/Plcaeholder5.jpeg) center/cover no-repeat; */
     margin: 2rem 0rem 0rem 0rem;
     border: 3px solid goldenrod;
     border-radius: 0.3rem;
@@ -6805,7 +6805,7 @@
     width: 100%;
     height: 45%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background: url(../images/Rectangle31.png) center/cover no-repeat;
+    /* background: url(../images/Rectangle31.png) center/cover no-repeat; */
   }
 
   .unionHeader {
@@ -6849,8 +6849,8 @@
     justify-items: center;
     align-items: start;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    background: linear-gradient(#00000081, #00000081),
-      url(../images/Placeholder2.jpeg) center/cover no-repeat;
+    /* background: linear-gradient(#00000081, #00000081),
+      url(../images/Placeholder2.jpeg) center/cover no-repeat; */
   }
 
   .contactContainer {

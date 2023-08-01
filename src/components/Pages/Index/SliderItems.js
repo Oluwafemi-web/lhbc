@@ -43,10 +43,6 @@ export default function SliderItems(props) {
       <PortableText value={props.heading} components={h3tags} />
       <PortableText value={props.subheading} components={h1tags} />
       <PortableText value={props.description} components={ptags} />
-
-      {/* <h3 className={classes.bannerFirstText}>{props.heading}</h3> */}
-      {/* <h1 className={classes.bannerSecondText}>{props.subheading}</h1> */}
-      {/* <p className={classes.bannerThirdText}>{props.description}</p> */}
       <button className={classes.bannerButton}>
         <Link to="/contact" className={classes.bannerButton}>
           CONTACT US

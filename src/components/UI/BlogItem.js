@@ -1,13 +1,24 @@
 import classes from "../../css/style.module.css";
-export default function BlogItem() {
+import { PortableText } from "@portabletext/react";
+export default function BlogItem(props) {
+  const heading = {
+    types: {
+      block: ({ value }) => {
+        return (
+          <h5 className={classes.postHeader}>
+            <i>{value.children[0].text}</i>
+          </h5>
+        );
+      },
+    },
+  };
   return (
     <div className={classes.post1}>
       <div className={classes.blogImg}>
-        <p className={classes.postDate}>Oct 16, 2020</p>
+        <p className={classes.postDate}>{props.date}</p>
       </div>
-      <h5 className={classes.postHeader}>
-        <i>Giving to God - Active ways to get blessed</i>
-      </h5>
+
+      <PortableText value={props.heading} components={heading} />
       <p>
         <a href="#" className={classes.postDetails}>
           Read More

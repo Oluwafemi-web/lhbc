@@ -10,13 +10,11 @@ export default function Events(props) {
           className={classes["fa-calendar-days"]}
         />
         {/* <i className={classes.fa-solid fa-calendar-days" /> */}
-        <p className={classes.askDay}>Mar 4</p>
-        <p className={classes.askTime}>7:00am</p>
+        <p className={classes.askDay}>{props.date}</p>
+        <p className={classes.askTime}>{props.time}</p>
       </div>
       <div className={classes.askText}>
-        <h4 className={classes.askHeader}>
-          Operation ASK: 100 Days of seeking God
-        </h4>
+        <h4 className={classes.askHeader}>{props.eventname}</h4>
         <p>
           <a href="#" className={classes.askDetails}>
             Event Details

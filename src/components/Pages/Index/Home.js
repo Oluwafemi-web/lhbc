@@ -21,7 +21,54 @@ export async function HomeData() {
             url
           }
         }
-
+      },
+      upcomingevents[]{
+        date,
+        time,
+        name
+      },
+      aboutus[]{
+        image{
+          asset->{
+            url
+          }
+        },
+        heading,
+        description,
+      },
+      aboutkeys[]{
+        heading,
+        description
+      },
+      organizations[]{
+        image{
+          asset->{
+            url
+          }
+        },
+        organization,
+        description
+      },
+      getintouch[]{
+        number,
+        email,
+        address,
+        heading,
+        description,
+        image{
+          asset->{
+            url
+          }
+        }
+      },
+      blog[]{
+        image{
+          asset->{
+            url
+          }
+        },
+        heading,
+        date,
       }
     }`
     )
@@ -32,16 +79,23 @@ export async function HomeData() {
 export default function Home() {
   const test = useLoaderData();
   const { carousel } = test;
-  console.log(carousel);
+  const { upcomingevents } = test;
+  const { aboutus } = test;
+  const { aboutkeys, organizations, getintouch, blog } = test;
+  console.log(carousel, organizations);
   return (
     <>
       <Carousel carouselData={carousel} />
-      <IndexAbout />
+      <IndexAbout
+        eventDetails={upcomingevents}
+        aboutDetails={aboutus}
+        keyPoints={aboutkeys}
+      />
       <Donation />
       <Sermon />
-      <Organizations />
-      <IndexContact />
-      <IndexBlog />
+      <Organizations organizationDetails={organizations} />
+      <IndexContact contactDetails={getintouch} />
+      <IndexBlog blogDetails={blog} />
     </>
   );
 }

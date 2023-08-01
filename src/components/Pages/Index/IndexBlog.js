@@ -1,6 +1,6 @@
 import classes from "../../../css/style.module.css";
 import BlogItem from "../../UI/BlogItem";
-export default function IndexBlog() {
+export default function IndexBlog(props) {
   return (
     <div className={classes.blog}>
       {/* use slider for blog */}
@@ -8,49 +8,19 @@ export default function IndexBlog() {
       <h3 className={classes.blogHeader}>CATCH OUR LATEST UPDATES</h3>
       {/* underline icon here */}
       <div className={classes.blogPosts}>
+        {props.blogDetails &&
+          props.blogDetails.map((item, index) => (
+            <BlogItem
+              key={index}
+              image={item.image.asset.url}
+              date={item.date}
+              heading={item.heading}
+            />
+          ))}
+        {/* <BlogItem />
         <BlogItem />
-        <BlogItem />
-        <BlogItem />
+        <BlogItem /> */}
 
-        {/* <div className={classes.post1">
-          <div className={classes.blogImg">
-            <p className={classes.postDate">Oct 16, 2020</p>
-          </div>
-          <h5 className={classes.postHeader">
-            <i>Giving to God - Active ways to get blessed</i>
-          </h5>
-          <p>
-            <a href="#" className={classes.postDetails">
-              Read More
-            </a>
-          </p>
-        </div>
-        <div className={classes.post2">
-          <div className={classes.blogImg">
-            <p className={classes.postDate">Oct 16, 2020</p>
-          </div>
-          <h5 className={classes.postHeader">
-            <i>Giving to God - Active ways to get blessed</i>
-          </h5>
-          <p>
-            <a href="#" className={classes.postDetails">
-              Read More
-            </a>
-          </p>
-        </div>
-        <div className={classes.post3">
-          <div className={classes.blogImg">
-            <p className={classes.postDate">Oct 16, 2020</p>
-          </div>
-          <h5 className={classes.postHeader">
-            <i>Giving to God - Active ways to get blessed</i>
-          </h5>
-          <p>
-            <a href="#" className={classes.postDetails">
-              Read More
-            </a>
-          </p>
-        </div> */}
         {/* slider button here */}
       </div>
     </div>

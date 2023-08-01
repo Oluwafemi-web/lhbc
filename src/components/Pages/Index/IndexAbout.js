@@ -1,49 +1,84 @@
 import Upcoming from "./Upcoming";
+import { Link } from "react-router-dom";
 import { FaHeart, FaBible } from "react-icons/fa";
+import { PortableText } from "@portabletext/react";
 import classes from "../../../css/style.module.css";
 
-export default function IndexAbout() {
+export default function IndexAbout(props) {
+  const heading = {
+    types: {
+      block: ({ value }) => {
+        return (
+          <h1 className={classes.aboutHeader}>{value.children[0].text}</h1>
+        );
+      },
+    },
+  };
+  const description = {
+    types: {
+      block: ({ value }) => {
+        return <p className={classes.aboutText}>{value.children[0].text}</p>;
+      },
+    },
+  };
+  const keydescription = {
+    types: {
+      block: ({ value }) => {
+        return <p className={classes.message}>{value.children[0].text}</p>;
+      },
+    },
+  };
   return (
-    <div className={classes.about}>
-      <Upcoming />
-      <div className={classes.aboutContainer}>
-        <div className={classes.aboutImg} />
-        <div className={classes.aboutContent}>
-          <p className={classes.about_us}>ABOUT US</p>
-          <h1 className={classes.aboutHeader}>
-            <i>The Earth is the Lord's and the fullness thereof</i>
-          </h1>
-          <p className={classes.aboutText}>
-            On behalf of the members of Living Hope Baptist Church (Testimony
-            Ground), Port Harcourt, I welcome you to the official website of the
-            Church. We are using this website to introduce you to our church
-            family and the various ministries we engage in...
-          </p>
-          <div className={classes.messageContainer}>
-            <div className={classes.shortMessage1}>
-              <FaHeart className={classes["fa-heart"]} />
-              <h5 className={classes.shortMessageHeader}>Love One Another</h5>
-              <p className={classes.message}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Libero, quasi!
-              </p>
+    props.aboutDetails &&
+    props.aboutDetails.map((item) => (
+      <div className={classes.about}>
+        <Upcoming eventDetails={props.eventDetails} />
+        <div className={classes.aboutContainer}>
+          <div
+            className={classes.aboutImg}
+            style={{
+              background: `url(${item.image.asset.url}) center/cover no-repeat`,
+            }}
+          />
+          <div className={classes.aboutContent}>
+            <p className={classes.about_us}>ABOUT US</p>
+            <PortableText value={item.heading} components={heading} />
+            <PortableText value={item.description} components={description} />
+            <div className={classes.messageContainer}>
+              {props.keyPoints &&
+                props.keyPoints.map((item, index) => (
+                  <div
+                    className={classes[`shortMessage${index + 1}`]}
+                    key={index}
+                  >
+                    <FaHeart className={classes["fa-heart"]} />
+                    <h5 className={classes.shortMessageHeader}>
+                      {item.heading}
+                    </h5>
+                    <PortableText
+                      value={item.description}
+                      components={keydescription}
+                    />
+                  </div>
+                ))}
+
+              {/* <div className={classes.shortMessage2}>
+                <FaBible className={classes["fa-book-bible"]} />
+                <h5 className={classes.shortMessageHeader}>The Word of God</h5>
+                <p className={classes.message}>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Libero, quasi!
+                </p>
+              </div> */}
             </div>
-            <div className={classes.shortMessage2}>
-              <FaBible className={classes["fa-book-bible"]} />
-              <h5 className={classes.shortMessageHeader}>The Word of God</h5>
-              <p className={classes.message}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Libero, quasi!
-              </p>
-            </div>
+            <button className={classes.aboutButton}>
+              <Link to="/about" className={classes.aboutButton}>
+                LEARN MORE
+              </Link>
+            </button>
           </div>
-          <button className={classes.aboutButton}>
-            <a href="#" className={classes.aboutButton}>
-              LEARN MORE
-            </a>
-          </button>
         </div>
       </div>
-    </div>
+    ))
   );
 }

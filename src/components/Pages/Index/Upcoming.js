@@ -1,11 +1,20 @@
 import Events from "./Events";
 import classes from "../../../css/style.module.css";
 
-export default function Upcoming() {
+export default function Upcoming(props) {
   return (
     <div className={classes.operationAskContainer}>
-      <Events name="ask1" />
-      <Events name="ask2" />
+      {props.eventDetails &&
+        props.eventDetails.map((item, index) => (
+          <Events
+            name={`ask${index + 1}`}
+            date={item.date}
+            time={item.time}
+            eventname={item.name}
+          />
+        ))}
+      {/* <Events name="ask1" />
+      <Events name="ask2" /> */}
     </div>
   );
 }
