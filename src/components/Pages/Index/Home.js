@@ -49,6 +49,17 @@ export async function HomeData() {
         heading,
         description,
       },
+      sermon[]{
+        title,
+        minister,
+        date,
+        description,
+        image{
+          asset->{
+            url
+          }
+        }
+      },
       organizations[]{
         image{
           asset->{
@@ -90,7 +101,7 @@ export default function Home() {
   const { carousel } = test;
   const { upcomingevents } = test;
   const { aboutus } = test;
-  const { aboutkeys, organizations, getintouch, blog, donate } = test;
+  const { aboutkeys, organizations, getintouch, blog, donate, sermon } = test;
   console.log(carousel, donate);
   return (
     <>
@@ -101,7 +112,7 @@ export default function Home() {
         keyPoints={aboutkeys}
       />
       <Donation donationDetails={donate} />
-      <Sermon />
+      <Sermon sermonDetails={sermon} />
       <Organizations organizationDetails={organizations} />
       <IndexContact contactDetails={getintouch} />
       <IndexBlog blogDetails={blog} />

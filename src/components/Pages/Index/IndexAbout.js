@@ -30,8 +30,8 @@ export default function IndexAbout(props) {
   };
   return (
     props.aboutDetails &&
-    props.aboutDetails.map((item) => (
-      <div className={classes.about}>
+    props.aboutDetails.map((item, index) => (
+      <div className={classes.about} key={index}>
         <Upcoming eventDetails={props.eventDetails} />
         <div className={classes.aboutContainer}>
           <div

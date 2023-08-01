@@ -7,6 +7,7 @@ export default function Upcoming(props) {
       {props.eventDetails &&
         props.eventDetails.map((item, index) => (
           <Events
+            key={index}
             name={`ask${index + 1}`}
             date={item.date}
             time={item.time}

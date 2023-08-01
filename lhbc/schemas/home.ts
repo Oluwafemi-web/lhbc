@@ -75,7 +75,6 @@ export default defineType({
           type: 'object',
           name: 'event',
           fields: [
-            // {type: 'image', name: 'image'},
             {type: 'string', name: 'heading'},
             {type: 'array', name: 'description', of: [{type: 'block'}]},
             // {type: 'string', name: 'date'},
@@ -116,6 +115,7 @@ export default defineType({
             {type: 'string', name: 'minister'},
             {type: 'string', name: 'date'},
             {type: 'array', name: 'description', of: [{type: 'block'}]},
+            {type: 'image', name: 'image'},
           ],
         },
       ],
