@@ -24,7 +24,7 @@ export default defineType({
           name: 'banner',
           fields: [
             {type: 'image', name: 'image'},
-            {type: 'String', name: 'pagetitle'},
+            {type: 'string', name: 'pagetitle'},
             // {type: 'array', name: 'subheading', of: [{type: 'block'}]},
             // {type: 'array', name: 'description', of: [{type: 'block'}]},
           ],
@@ -60,7 +60,7 @@ export default defineType({
           fields: [
             {type: 'string', name: 'title'},
             {type: 'string', name: 'preacher'},
-            {type: 'text', name: 'date'},
+            {type: 'string', name: 'date'},
             // {type: 'image', name: 'image'},
           ],
         },
@@ -81,22 +81,6 @@ export default defineType({
             // {type: 'array', name: 'description', of: [{type: 'block'}]},
             // {type: 'string', name: 'date'},
             // {type: 'string', name: 'time'},
-          ],
-        },
-      ],
-    }),
-    defineField({
-      title: 'Organizations',
-      type: 'array',
-      name: 'organizations',
-      of: [
-        {
-          type: 'object',
-          name: 'organization',
-          fields: [
-            {type: 'image', name: 'image'},
-            {type: 'string', name: 'organization'},
-            {type: 'array', name: 'description', of: [{type: 'block'}]},
           ],
         },
       ],

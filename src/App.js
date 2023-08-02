@@ -5,13 +5,14 @@ import About from "./components/Pages/About/About";
 import Blog from "./components/Pages/Blog/Blog";
 import Gallery from "./components/Pages/Gallery/Gallery";
 import Contact from "./components/Pages/Contact/Contact";
-import RootLayout from "./components/UI/Root";
+import RootLayout, { GeneralData } from "./components/UI/Root";
 // import sanityClient from "./client";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    loader: GeneralData,
     children: [
       {
         index: true,

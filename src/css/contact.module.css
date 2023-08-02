@@ -349,7 +349,7 @@
   grid-template-rows: auto auto;
   align-items: center;
   justify-items: center;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
 .locateUsFirstText {
@@ -365,7 +365,7 @@
   border: 1px solid #b3aeae;
   border-radius: 0.3rem;
   margin: 3rem 0rem 2rem 0rem;
-  background: url(../images/placeholder1.png) center/cover no-repeat;
+  /* background: url(../images/placeholder1.png) center/cover no-repeat; */
 }
 
 .event {
@@ -1142,7 +1142,7 @@
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -1158,7 +1158,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -1932,7 +1932,7 @@
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -1948,7 +1948,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -2731,7 +2731,7 @@
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -2747,7 +2747,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -3531,7 +3531,7 @@
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -3547,7 +3547,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -4330,14 +4330,14 @@
   }
 
   .locateUsContainer {
-    width: 576px;
+    /* width: 576px; */
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 4rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -4353,7 +4353,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -5111,14 +5111,14 @@
   }
 
   .locateUsContainer {
-    width: 768px;
+    /* width: 768px; */
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 4rem 2rem 1rem 2rem;
+    padding: 4rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -5134,7 +5134,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -5898,14 +5898,14 @@
   }
 
   .locateUsContainer {
-    width: 850px;
+    /* width: 850px; */
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 4rem 2rem 1rem 2rem;
+    padding: 4rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -5921,7 +5921,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -6682,14 +6682,14 @@
   }
 
   .locateUsContainer {
-    width: 950px;
+    /* width: 950px; */
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 4rem 2rem 1rem 2rem;
+    padding: 4rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -6705,7 +6705,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -7473,14 +7473,14 @@
   }
 
   .locateUsContainer {
-    width: 1050px;
+    /* width: 1050px; */
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 4rem 2rem 1rem 2rem;
+    padding: 4rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -7496,7 +7496,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {
@@ -8264,14 +8264,14 @@
   }
 
   .locateUsContainer {
-    width: 1050px;
+    /* width: 1050px; */
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: center;
     justify-items: center;
-    padding: 4rem 2rem 1rem 2rem;
+    padding: 4rem 0rem 1rem 0rem;
   }
 
   .locateUsFirstText {
@@ -8287,7 +8287,7 @@
     border: 1px solid #b3aeae;
     border-radius: 0.3rem;
     margin: 3rem 0rem 2rem 0rem;
-    background: url(../images/placeholder1.png) center/cover no-repeat;
+    /* background: url(../images/placeholder1.png) center/cover no-repeat; */
   }
 
   .event {

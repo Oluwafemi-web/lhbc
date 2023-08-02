@@ -9,100 +9,94 @@ import { useLoaderData } from "react-router-dom";
 import sanityClient from "../../../client";
 
 export async function HomeData() {
-  const response = await sanityClient
-    .fetch(
-      `*[type == home]{
-      carousel[]{
-        heading,
-        subheading,
-        description,
-        image{
-          asset->{
-            url
+  try {
+    const response = await sanityClient.fetch(
+      `*[_type == 'home'] {
+        carousel[]{
+          heading,
+          subheading,
+          description,
+          image {
+            asset->{
+              url
+            }
           }
+        },
+        upcomingevents[]{
+          date,
+          time,
+          name
+        },
+        aboutus[]{
+          image {
+            asset->{
+              url
+            }
+          },
+          heading,
+          description,
+        },
+        aboutkeys[]{
+          heading,
+          description
+        },
+        donate[]{
+          image {
+            asset->{
+              url
+            }
+          },
+          heading,
+          description
+        },
+        sermon[]{
+          title,
+          minister,
+          date,
+          description,
+          image {
+            asset->{
+              url
+            }
+          }
+        },
+        getintouch[]{
+          number,
+          email,
+          address,
+          heading,
+          description,
+          image {
+            asset->{
+              url
+            }
+          }
+        },
+        blog[]{
+          image {
+            asset->{
+              url
+            }
+          },
+          heading,
+          date,
         }
-      },
-      upcomingevents[]{
-        date,
-        time,
-        name
-      },
-      aboutus[]{
-        image{
-          asset->{
-            url
-          }
-        },
-        heading,
-        description,
-      },
-      aboutkeys[]{
-        heading,
-        description
-      },
-      donate[]{
-        image{
-          asset->{
-            url
-          }
-        },
-        heading,
-        description,
-      },
-      sermon[]{
-        title,
-        minister,
-        date,
-        description,
-        image{
-          asset->{
-            url
-          }
-        }
-      },
-      organizations[]{
-        image{
-          asset->{
-            url
-          }
-        },
-        organization,
-        description
-      },
-      getintouch[]{
-        number,
-        email,
-        address,
-        heading,
-        description,
-        image{
-          asset->{
-            url
-          }
-        }
-      },
-      blog[]{
-        image{
-          asset->{
-            url
-          }
-        },
-        heading,
-        date,
-      }
-    }`
-    )
-    .then((data) => data[0]);
-  return response;
+      }`
+    );
+
+    return response[0]; // Assuming the response is an array, you may want to access the first element.
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error;
+  }
 }
 
 export default function Home() {
-  const test = useLoaderData();
+  const test = useLoaderData(HomeData);
   const { carousel } = test;
   const { upcomingevents } = test;
   const { aboutus } = test;
-  const { aboutkeys, organizations, getintouch, blog, donate, sermon } = test;
-  console.log(carousel, donate);
+  const { aboutkeys, getintouch, blog, donate, sermon } = test;
   return (
     <>
       <Carousel carouselData={carousel} />
@@ -113,7 +107,7 @@ export default function Home() {
       />
       <Donation donationDetails={donate} />
       <Sermon sermonDetails={sermon} />
-      <Organizations organizationDetails={organizations} />
+      <Organizations />
       <IndexContact contactDetails={getintouch} />
       <IndexBlog blogDetails={blog} />
     </>
