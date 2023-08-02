@@ -1,16 +1,24 @@
 import classes from "../../../css/about.module.css";
 import DiaconateItem from "./DiaconateItem";
-export default function Diaconate() {
+export default function Diaconate(props) {
   return (
     <div className={classes.diaconate}>
       <div className={classes.diaconateContainer}>
         <p className={classes.diaconateFirstText}>Diaconate</p>
         <h3 className={classes.diaconateHeader}>CHURCH DEACONS</h3>
         <div className={classes.deaconsList}>
+          {props.deaconDetails &&
+            props.deaconDetails.map((item, index) => (
+              <DiaconateItem
+                key={index}
+                image={item.image.asset.url}
+                name={item.name}
+              />
+            ))}
           {/* use slider for the deacons list */}
+          {/* <DiaconateItem />
           <DiaconateItem />
-          <DiaconateItem />
-          <DiaconateItem />
+          <DiaconateItem /> */}
 
           {/* slider buttons */}
         </div>
