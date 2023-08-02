@@ -1,3 +1,4 @@
 import blockContent from './blockContent'
 import home from './home'
-export const schemaTypes = [home, blockContent]
+import footer from './footer'
+export const schemaTypes = [home, footer, blockContent]
