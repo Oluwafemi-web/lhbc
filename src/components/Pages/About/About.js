@@ -73,7 +73,7 @@ export default function About() {
   const { banner, nextevent, organizations, sermon, aboutus, diaconate } = test;
   return (
     <>
-      <BannerImg />
+      <BannerImg banner={banner} />
       <AboutContent aboutData={aboutus} featured={sermon} />
       <Diaconate deaconDetails={diaconate} />
       <Organizations organizationDetails={organizations} />
