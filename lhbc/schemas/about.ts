@@ -15,35 +15,18 @@ export default defineType({
       },
     }),
     defineField({
-      title: 'Carousel Slides',
+      title: 'Banner',
       type: 'array',
-      name: 'carousel',
+      name: 'banner',
       of: [
         {
           type: 'object',
-          name: 'slide',
+          name: 'banner',
           fields: [
-            {type: 'array', name: 'heading', of: [{type: 'block'}]},
-            {type: 'array', name: 'subheading', of: [{type: 'block'}]},
-            {type: 'array', name: 'description', of: [{type: 'block'}]},
             {type: 'image', name: 'image'},
-          ],
-        },
-      ],
-    }),
-    defineField({
-      title: 'Upcoming Events',
-      type: 'array',
-      name: 'upcomingevents',
-      of: [
-        {
-          type: 'object',
-          name: 'event',
-          fields: [
-            {type: 'string', name: 'date'},
-            {type: 'string', name: 'time'},
-            {type: 'text', name: 'name'},
-            // {type: 'image', name: 'image'},
+            {type: 'String', name: 'pagetitle'},
+            // {type: 'array', name: 'subheading', of: [{type: 'block'}]},
+            // {type: 'array', name: 'description', of: [{type: 'block'}]},
           ],
         },
       ],
@@ -67,55 +50,37 @@ export default defineType({
       ],
     }),
     defineField({
-      title: 'About Key points',
-      type: 'array',
-      name: 'aboutkeys',
-      of: [
-        {
-          type: 'object',
-          name: 'event',
-          fields: [
-            {type: 'string', name: 'heading'},
-            {type: 'array', name: 'description', of: [{type: 'block'}]},
-            // {type: 'string', name: 'date'},
-            // {type: 'string', name: 'time'},
-          ],
-        },
-      ],
-    }),
-    defineField({
-      title: 'Donate',
-      type: 'array',
-      name: 'donate',
-      of: [
-        {
-          type: 'object',
-          name: 'donate',
-          fields: [
-            {type: 'image', name: 'image'},
-            {type: 'array', name: 'heading', of: [{type: 'block'}]},
-            {type: 'array', name: 'description', of: [{type: 'block'}]},
-            // {type: 'string', name: 'date'},
-            // {type: 'string', name: 'time'},
-          ],
-        },
-      ],
-    }),
-    defineField({
-      title: 'Todays Sermon',
+      title: 'Featured Sermon',
       type: 'array',
       name: 'sermon',
       of: [
         {
           type: 'object',
-          name: 'sermon',
+          name: 'event',
           fields: [
-            // {type: 'image', name: 'image'},
             {type: 'string', name: 'title'},
-            {type: 'string', name: 'minister'},
-            {type: 'string', name: 'date'},
-            {type: 'array', name: 'description', of: [{type: 'block'}]},
+            {type: 'string', name: 'preacher'},
+            {type: 'text', name: 'date'},
+            // {type: 'image', name: 'image'},
+          ],
+        },
+      ],
+    }),
+
+    defineField({
+      title: 'Diaconate',
+      type: 'array',
+      name: 'diaconate',
+      of: [
+        {
+          type: 'object',
+          name: 'event',
+          fields: [
             {type: 'image', name: 'image'},
+            {type: 'string', name: 'name'},
+            // {type: 'array', name: 'description', of: [{type: 'block'}]},
+            // {type: 'string', name: 'date'},
+            // {type: 'string', name: 'time'},
           ],
         },
       ],
@@ -137,40 +102,18 @@ export default defineType({
       ],
     }),
     defineField({
-      title: 'Get In Touch',
+      title: 'Next Event',
       type: 'array',
-      name: 'getintouch',
+      name: 'nextevent',
       of: [
         {
           type: 'object',
-          name: 'event',
-          fields: [
-            {type: 'string', name: 'number'},
-            {type: 'string', name: 'email'},
-            {type: 'array', name: 'address', of: [{type: 'block'}]},
-            {type: 'string', name: 'heading'},
-            {type: 'array', name: 'description', of: [{type: 'block'}]},
-            {type: 'image', name: 'image'},
-            // {type: 'array', name: 'heading', of: [{type: 'block'}]},
-            // {type: 'string', name: 'date'},
-            // {type: 'string', name: 'time'},
-          ],
-        },
-      ],
-    }),
-    defineField({
-      title: 'Blog',
-      type: 'array',
-      name: 'blog',
-      of: [
-        {
-          type: 'object',
-          name: 'event',
+          name: 'donate',
           fields: [
             {type: 'image', name: 'image'},
-            {type: 'array', name: 'heading', of: [{type: 'block'}]},
-            {type: 'string', name: 'date'},
+            {type: 'string', name: 'title'},
             // {type: 'array', name: 'description', of: [{type: 'block'}]},
+            {type: 'string', name: 'date'},
             // {type: 'string', name: 'time'},
           ],
         },
@@ -179,7 +122,7 @@ export default defineType({
   ],
   preview: {
     select: {
-      title: 'home',
+      title: 'About',
       // media: 'image',
     },
   },
