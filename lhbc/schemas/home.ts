@@ -113,6 +113,22 @@ export default defineType({
       ],
     }),
     defineField({
+      title: 'Organizations',
+      type: 'array',
+      name: 'organizations',
+      of: [
+        {
+          type: 'object',
+          name: 'organization',
+          fields: [
+            {type: 'image', name: 'image'},
+            {type: 'string', name: 'organization'},
+            {type: 'array', name: 'description', of: [{type: 'block'}]},
+          ],
+        },
+      ],
+    }),
+    defineField({
       title: 'Get In Touch',
       type: 'array',
       name: 'getintouch',

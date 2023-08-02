@@ -60,6 +60,15 @@ export async function HomeData() {
             }
           }
         },
+        organizations[]{
+          image {
+            asset->{
+              url
+            }
+          },
+          organization,
+          description
+        },
         getintouch[]{
           number,
           email,
@@ -93,10 +102,18 @@ export async function HomeData() {
 
 export default function Home() {
   const test = useLoaderData(HomeData);
-  const { carousel } = test;
-  const { upcomingevents } = test;
-  const { aboutus } = test;
-  const { aboutkeys, getintouch, blog, donate, sermon } = test;
+  const {
+    carousel,
+    organizations,
+    upcomingevents,
+    aboutus,
+    aboutkeys,
+    getintouch,
+    blog,
+    donate,
+    sermon,
+  } = test;
+
   return (
     <>
       <Carousel carouselData={carousel} />
@@ -107,7 +124,7 @@ export default function Home() {
       />
       <Donation donationDetails={donate} />
       <Sermon sermonDetails={sermon} />
-      <Organizations />
+      <Organizations organizationDetails={organizations} />
       <IndexContact contactDetails={getintouch} />
       <IndexBlog blogDetails={blog} />
     </>

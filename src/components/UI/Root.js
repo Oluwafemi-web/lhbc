@@ -7,20 +7,6 @@ import { useLoaderData } from "react-router-dom";
 
 export async function GeneralData() {
   try {
-    const organization = await sanityClient.fetch(
-      `*[_type == 'organizations']{
-        organizations[]{
-          image {
-            asset->{
-              url
-            }
-          },
-          organization,
-          description
-        }
-      }`
-    );
-
     const footer = await sanityClient.fetch(
       `*[_type == 'footer']{
         aboutus[]{
@@ -42,17 +28,7 @@ export async function GeneralData() {
       }`
     );
 
-    const nextevent = await sanityClient.fetch(
-      `*[_type == 'nextevent']{
-        organizations[]{
-          image,
-          organization,
-          description
-        }
-      }`
-    );
-
-    return [organization[0], footer[0], nextevent[0]];
+    return footer[0];
   } catch (error) {
     console.error("Error fetching data:", error);
     throw error;
@@ -61,9 +37,7 @@ export async function GeneralData() {
 
 export default function RootLayout() {
   const test = useLoaderData();
-  const [organization, footer, nextevent] = test;
-  const { quicklinks, aboutus, updates } = footer;
-  console.log(updates);
+  const { quicklinks, aboutus, updates } = test;
   return (
     <>
       <Header />
