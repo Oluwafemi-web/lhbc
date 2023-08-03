@@ -1,8 +1,17 @@
 import classes from "../../../css/gallery.module.css";
-export default function BannerImg() {
+export default function BannerImg(props) {
   return (
-    <div className={classes.galleryBanner}>
-      <h3 className={classes.galleryBannerMainText}>Gallery</h3>
-    </div>
+    props.bannerDetails &&
+    props.bannerDetails.map((item, index) => (
+      <div
+        className={classes.galleryBanner}
+        key={index}
+        style={{
+          background: `linear-gradient(#00000081, #00000081), url(${item.image.asset.url}) fixed`,
+        }}
+      >
+        <h3 className={classes.galleryBannerMainText}>{item.pagetitle}</h3>
+      </div>
+    ))
   );
 }

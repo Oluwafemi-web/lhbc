@@ -3,7 +3,7 @@ import Wrapper from "./components/UI/Wrapper";
 import Home, { HomeData } from "./components/Pages/Index/Home";
 import About, { AboutData } from "./components/Pages/About/About";
 import Blog from "./components/Pages/Blog/Blog";
-import Gallery from "./components/Pages/Gallery/Gallery";
+import Sermon, { SermonData } from "./components/Pages/Gallery/Sermon";
 import Contact from "./components/Pages/Contact/Contact";
 import RootLayout, { GeneralData } from "./components/UI/Root";
 // import sanityClient from "./client";
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         loader: HomeData,
       },
       { path: "/about", element: <About />, loader: AboutData },
-      { path: "/gallery", element: <Gallery /> },
+      { path: "/sermon", element: <Sermon />, loader: SermonData },
       { path: "/contact", element: <Contact /> },
       { path: "/blog", element: <Blog /> },
     ],

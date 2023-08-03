@@ -60,14 +60,14 @@ export default function Header() {
             </li>
             <li className={classes.headerUl}>
               <NavLink
-                to="/gallery"
+                to="/sermon"
                 className={({ isActive }) =>
                   isActive
                     ? `${classes.headerGallery} active`
                     : classes.headerGallery
                 }
               >
-                GALLERY
+                SERMON
               </NavLink>
             </li>
             <li className={classes.headerUl}>
