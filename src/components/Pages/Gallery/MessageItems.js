@@ -14,7 +14,10 @@ export default function MessageItems(props) {
   };
   return (
     <div className={classes.message1}>
-      <div className={classes.messageImg} />
+      <div
+        className={classes.messageImg}
+        style={{ background: ` url(${props.image}) center/cover` }}
+      />
       <div className={classes.messageContentContainer}>
         <h5 className={classes.messageHeader}>{props.title}</h5>
         <p className={classes.messagePreacher}>

@@ -24,7 +24,7 @@ export default function Footer(props) {
       <div className={classes.footerContainer}>
         {props.aboutus &&
           props.aboutus.map((item, index) => (
-            <div className={classes.footerAbout}>
+            <div className={classes.footerAbout} key={index}>
               <h4 className={classes.footerAboutHeader}>About US</h4>
               <PortableText value={item.description} components={about} />
               <div className={classes.socials}>

@@ -19,6 +19,7 @@ export default function MessageList(props) {
               <MessageItems
                 key={index}
                 title={item.title}
+                image={item.image.asset.url}
                 date={item.date}
                 description={item.description}
                 preacher={item.preacher}
