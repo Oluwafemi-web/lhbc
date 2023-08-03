@@ -9,12 +9,12 @@ export default function MediaIcons(props) {
         </a>
       </div>
       <div className={classes.mediaButton}>
-        <a href={`${props.audio}?dl=`}>
+        <a href={props.audio}>
           <FaPause className={classes["fa-pause"]} />
         </a>
       </div>
       <div className={classes.mediaButton}>
-        <a href={props.audio}>
+        <a href={`${props.audio}?dl=`}>
           <FaDownload className={classes["fa-download"]} />
         </a>
       </div>
