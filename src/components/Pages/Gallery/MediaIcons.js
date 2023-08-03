@@ -40,15 +40,16 @@ export default function MediaIcons(props) {
     audioRef.current.addEventListener("loadedmetadata", handleLoadedMetadata);
     audioRef.current.addEventListener("ended", handleAudioEnd);
     audioRef.current.addEventListener("play", handleAudioPlay);
-    return () => {
-      audioRef.current.removeEventListener("timeupdate", handleTimeUpdate);
-      audioRef.current.removeEventListener(
-        "loadedmetadata",
-        handleLoadedMetadata
-      );
-      audioRef.current.removeEventListener("ended", handleAudioEnd);
-      audioRef.current.removeEventListener("play", handleAudioPlay);
-    };
+
+    // return  () => {
+    //   audioRef.current.removeEventListener("timeupdate", handleTimeUpdate);
+    //   audioRef.current.removeEventListener(
+    //     "loadedmetadata",
+    //     handleLoadedMetadata
+    //   );
+    //   audioRef.current.removeEventListener("ended", handleAudioEnd);
+    //   audioRef.current.removeEventListener("play", handleAudioPlay);
+    // };
   }, []);
 
   const formatTime = (time) => {
