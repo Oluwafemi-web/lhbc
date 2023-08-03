@@ -22,7 +22,7 @@ export default function MessageList(props) {
                 date={item.date}
                 description={item.description}
                 preacher={item.preacher}
-                audio={item.audio.asset.url}
+                audio={item.audioURL}
               />
             ))}
         </div>

@@ -475,7 +475,7 @@
   height: 40%;
   width: 100%;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
-  background: url(../images/Placeholder3.png) center/cover;
+  /* background: url(../images/Placeholder3.png) center/cover; */
 }
 
 .messageContentContainer {
@@ -1096,7 +1096,7 @@
     height: 40%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageContentContainer {
@@ -1773,7 +1773,7 @@
     height: 50%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageContentContainer {
@@ -2526,7 +2526,7 @@
     height: 50%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageContentContainer {
@@ -3283,7 +3283,7 @@
     height: 50%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageContentContainer {
@@ -4073,7 +4073,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -4144,7 +4144,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -4215,7 +4215,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -4286,7 +4286,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -4373,7 +4373,7 @@
     height: 100%;
     width: 35%;
     border-radius: 0.5rem 0rem 0rem 0.5rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
     transition: all 0.1s linear;
   }
 
@@ -5216,7 +5216,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -5287,7 +5287,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -5358,7 +5358,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -5429,7 +5429,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -5516,7 +5516,7 @@
     height: 100%;
     width: 35%;
     border-radius: 0.5rem 0rem 0rem 0.5rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
     transition: all 0.1s linear;
   }
 
@@ -6356,7 +6356,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked
@@ -6427,7 +6427,7 @@
     height: 45%;
     width: 100%;
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    background: url(../images/Placeholder3.png) center/cover;
+    /* background: url(../images/Placeholder3.png) center/cover; */
   }
 
   .messageDisplayType:checked

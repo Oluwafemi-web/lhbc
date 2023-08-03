@@ -38,6 +38,7 @@ export async function SermonData() {
 export default function Sermon() {
   const test = useLoaderData();
   const { banner, sermons } = test;
+  console.log(sermons);
   return (
     <>
       <BannerImg bannerDetails={banner} />
