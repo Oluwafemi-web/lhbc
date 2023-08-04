@@ -1,7 +1,9 @@
 import classes from "../../../css/gallery.module.css";
 import { FaSearch, FaCaretDown, FaStar } from "react-icons/fa";
+import { forwardRef } from "react";
+import { useRef } from "react";
 
-export default function SideBar() {
+const SideBar = forwardRef((props, ref) => {
   return (
     <div className={classes.sideBar}>
       <div className={classes.sideBarContainer}>
@@ -59,7 +61,13 @@ export default function SideBar() {
           </form>
         </div>
         <form className={classes.searchBarContainer}>
-          <select name="year" id="year" className={classes.yearBar}>
+          <select
+            name="year"
+            id="year"
+            className={classes.yearBar}
+            ref={ref}
+            onChange={props.handleYearChange}
+          >
             <option value="#">Year</option>
             <option value={2023}>2023</option>
             <option value={2022}>2022</option>
@@ -81,4 +89,6 @@ export default function SideBar() {
       </div>
     </div>
   );
-}
+});
+
+export default SideBar;

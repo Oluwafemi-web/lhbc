@@ -7,7 +7,7 @@ import classes from "../../../css/gallery.module.css";
 import sanityClient from "../../../client";
 import { useLoaderData } from "react-router-dom";
 import parse from "date-fns/parse";
-import format from "date-fns/format";
+import { useRef, useState } from "react";
 
 export async function SermonData() {
   try {
@@ -42,9 +42,15 @@ export async function SermonData() {
     throw error;
   }
 }
+
 export default function Sermon() {
   const test = useLoaderData();
   const { banner, sermons } = test;
+
+  const [filtered, setIsFiltered] = useState(false);
+  const [filteredSermons, setFilteredSermons] = useState([]);
+
+  const yearRef = useRef(null);
 
   //get the dates from the sermons array
   const dates = sermons.map((item) => item.date);
@@ -78,12 +84,28 @@ export default function Sermon() {
   // Get the latest item from the sorted array
 
   const latestSermon = sermonsParsed[0];
-  console.log(latestSermon);
+
+  const handleYearHandler = () => {
+    const yearValue = yearRef.current.value;
+
+    if (yearValue === "#") {
+      return;
+    } else {
+      setIsFiltered(true);
+      const sermonFiltered = sermonsParsed.filter(
+        (item) => item.parsedDate.getFullYear() === +yearValue
+        // const filter = new Date(item.parsedDate);
+      );
+      setFilteredSermons(sermonFiltered);
+      // return sermonFiltered;
+    }
+  };
+
   return (
     <>
       <BannerImg bannerDetails={banner} />
       <div className={classes.mainContainer}>
-        <SideBar />
+        <SideBar ref={yearRef} handleYearChange={handleYearHandler} />
         <LatestMessage
           title={latestSermon.title}
           preacher={latestSermon.preacher}
@@ -91,7 +113,7 @@ export default function Sermon() {
           description={latestSermon.description}
           audio={latestSermon.audioURL}
         />
-        <MessageList message={sermonsParsed} />
+        <MessageList message={filtered ? filteredSermons : sermonsParsed} />
       </div>
       <NextEvent />
     </>
