@@ -10409,3 +10409,15 @@
       url(../images/Placeholder4.jpeg) fixed; */
   }
 }
+.categoryBar {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.categoryBar option:hover {
+  background-color: gray;
+  cursor: pointer;
+}

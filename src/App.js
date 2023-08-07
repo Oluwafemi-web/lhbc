@@ -12,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    id: "root",
     loader: GeneralData,
     children: [
       {

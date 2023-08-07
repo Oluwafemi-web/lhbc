@@ -30,9 +30,16 @@ export async function SermonData() {
             }
           },
           date,
+          category,
           description,
           'audioURL': audio.asset->url
         },
+        years[]{
+          year,
+        },
+        category[]{
+          category,
+        }
       }`
     );
 
@@ -45,13 +52,13 @@ export async function SermonData() {
 
 export default function Sermon() {
   const test = useLoaderData();
-  const { banner, sermons } = test;
+  const { banner, sermons, years, category } = test;
 
   const [filtered, setIsFiltered] = useState(false);
   const [filteredSermons, setFilteredSermons] = useState([]);
 
   const yearRef = useRef(null);
-
+  const categoryRef = useRef(null);
   //get the dates from the sermons array
   const dates = sermons.map((item) => item.date);
 
@@ -87,25 +94,55 @@ export default function Sermon() {
 
   const handleYearHandler = () => {
     const yearValue = yearRef.current.value;
+    const filterCondition = (item) =>
+      item.parsedDate.getFullYear() === +yearValue;
 
-    if (yearValue === "#") {
+    if (yearValue === "#" || yearValue === "all") {
       return;
     } else {
+      setIsFiltered(false);
       setIsFiltered(true);
-      const sermonFiltered = sermonsParsed.filter(
-        (item) => item.parsedDate.getFullYear() === +yearValue
-        // const filter = new Date(item.parsedDate);
-      );
+      const sermonFiltered = (
+        filteredSermons.length !== 0 ? filteredSermons : sermonsParsed
+      ).filter(filterCondition);
       setFilteredSermons(sermonFiltered);
       // return sermonFiltered;
     }
   };
 
+  const categoryHandler = () => {
+    const categoryValue = categoryRef.current.value;
+    console.log(categoryValue);
+    const filterCondition = (item) => item.category === categoryValue;
+
+    if (categoryValue === "#" || categoryValue == "all") {
+      setIsFiltered(false);
+      return;
+    } else {
+      setIsFiltered(true);
+      const sermonFiltered = (
+        filteredSermons.length !== 0 ? filteredSermons : sermonsParsed
+      ).filter(filterCondition);
+      setFilteredSermons(sermonFiltered);
+    }
+    console.log(filteredSermons);
+  };
+  const test2 = useLoaderData("root");
+  console.log(test2);
+
   return (
     <>
       <BannerImg bannerDetails={banner} />
       <div className={classes.mainContainer}>
-        <SideBar ref={yearRef} handleYearChange={handleYearHandler} />
+        <SideBar
+          yearRef={yearRef}
+          categoryRef={categoryRef}
+          handleYearChange={handleYearHandler}
+          handleCategoryChange={categoryHandler}
+          category={category}
+          years={years}
+        />
+
         <LatestMessage
           title={latestSermon.title}
           preacher={latestSermon.preacher}

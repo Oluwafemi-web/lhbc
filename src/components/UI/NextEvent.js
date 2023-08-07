@@ -1,7 +1,42 @@
 import classes from "../../css/about.module.css";
 import { FaCalendarPlus, FaLocationArrow, FaMapPin } from "react-icons/fa";
+import { useTimer } from "react-timer-hook";
+import sanityClient from "../../client";
+import { useEffect, useState } from "react";
 
 export default function NextEvent() {
+  const [event, setEvent] = useState(null);
+  const time = new Date();
+  // time.setSeconds(time.getSeconds() + 600);
+  const expiryTimestamp = time.setSeconds(time.getSeconds() + 600);
+
+  const {
+    totalSeconds,
+    seconds,
+    minutes,
+    hours,
+    days,
+    isRunning,
+    start,
+    pause,
+    resume,
+    restart,
+  } = useTimer({
+    expiryTimestamp,
+    onExpire: () => console.warn("onExpire called"),
+  });
+
+  useEffect(() => {
+    const nextevent = sanityClient
+      .fetch(
+        `*[_type == 'nextevent']{
+          name,
+          date,
+      }`
+      )
+      .then((data) => setEvent(data[0]));
+  }, []);
+  console.log(event);
   return (
     <div className={classes.event}>
       <h4 className={classes.eventHeader}>NEXT EVENT</h4>
@@ -38,10 +73,10 @@ export default function NextEvent() {
           </div>
         </div>
         <div className={classes.timerContainer}>
-          <p className={classes.days}>20</p>
-          <p className={classes.hours}>16</p>
-          <p className={classes.minutes}>32</p>
-          <p className={classes.seconds}>09</p>
+          <p className={classes.days}>{days}</p>
+          <p className={classes.hours}>{hours}</p>
+          <p className={classes.minutes}>{minutes}</p>
+          <p className={classes.seconds}>{seconds}</p>
         </div>
       </div>
     </div>

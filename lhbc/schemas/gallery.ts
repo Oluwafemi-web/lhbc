@@ -42,9 +42,34 @@ export default defineType({
             {type: 'string', name: 'title'},
             {type: 'string', name: 'preacher'},
             {type: 'string', name: 'date'},
+            {type: 'string', name: 'category'},
             {type: 'array', name: 'description', of: [{type: 'block'}]},
             {type: 'file', name: 'audio'},
           ],
+        },
+      ],
+    }),
+    defineField({
+      title: 'Years',
+      type: 'array',
+      name: 'years',
+      of: [
+        {
+          type: 'object',
+          name: 'event',
+          fields: [{type: 'string', name: 'year'}],
+        },
+      ],
+    }),
+    defineField({
+      title: 'Category',
+      type: 'array',
+      name: 'category',
+      of: [
+        {
+          type: 'object',
+          name: 'event',
+          fields: [{type: 'string', name: 'category'}],
         },
       ],
     }),
