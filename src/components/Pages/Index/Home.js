@@ -126,7 +126,7 @@ export default function Home() {
       <Sermon sermonDetails={sermon} />
       <Organizations organizationDetails={organizations} />
       <IndexContact contactDetails={getintouch} />
-      <IndexBlog blogDetails={blog} />
+      {/* <IndexBlog blogDetails={blog} /> */}
     </>
   );
 }

@@ -12,15 +12,32 @@ export default function Header() {
     <header className={classes.header}>
       <div className={classes.headerContainer}>
         <div className={classes.headerSocialContainer}>
-          <p className={classes.headerChurchName}>
+          {/* <p > */}
+          <a
+            href="https://www.google.com/maps/dir//Living+Hope+Baptist+Church+Elelenwo+PHC+High+Tension+Pole+Road,+Off+Standard+Road,+Elelenwo+Elelenwo/@4.8328662,7.0669595,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1069cd2fd8bc0373:0x75074f3e5a94f997!2m2!1d7.067011!2d4.8328455?entry=ttu"
+            target="_blank"
+            className={classes.headerChurchName}
+          >
             <FaMapMarkerAlt className={classes["fa-location-dot"]} />
             LHBC Elelenwo Port Harcourt
-          </p>
+          </a>
+          {/* </p> */}
           <div className={classes.headerSocials}>
-            <FaFacebook className={classes.headerFacebook} />
-            <FaTwitter className={classes.headerTwitter} />
-            <FaYoutube className={classes.headerYoutube} />
-            <FaInstagram className={classes.headerInstagram} />
+            <a
+              href="https://web.facebook.com/profile.php?id=100082955765174"
+              target="_blank"
+            >
+              <FaFacebook className={classes.headerFacebook} />
+            </a>
+            <a href="" target="_blank">
+              <FaTwitter className={classes.headerTwitter} />
+            </a>
+            <a href="" target="_blank">
+              <FaYoutube className={classes.headerYoutube} />
+            </a>
+            <a href="https://www.instagram.com/lhbc_phc/" target="_blank">
+              <FaInstagram className={classes.headerInstagram} />
+            </a>
           </div>
         </div>
         <div className={classes.navbar}>
@@ -82,7 +99,7 @@ export default function Header() {
                 CONTACT
               </NavLink>
             </li>
-            <li className={classes.headerUl}>
+            {/* <li className={classes.headerUl}>
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
@@ -91,7 +108,7 @@ export default function Header() {
               >
                 BLOG
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

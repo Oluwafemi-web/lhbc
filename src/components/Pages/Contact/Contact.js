@@ -10,14 +10,17 @@ export async function ContactData() {
   try {
     const response = await sanityClient.fetch(
       `*[_type == 'contacts'] {
-        title,
-        image{
-          asset->{
-            url
-          }
+        contactus[]{
+          title,
+          bannerimage{
+            asset->{
+              url
+            }
+          },
+          email,
+          numbers
         },
-        numbers,
-        email
+        
       }`
     );
 
@@ -38,10 +41,11 @@ export async function ContactData() {
 export default function Contact() {
   const test = useLoaderData();
   const [main, event] = test;
+  const { contactus } = main;
   return (
     <>
       <BannerImg />
-      <ContactCard />
+      <ContactCard numbers={contactus[0].numbers} email={contactus[0].email} />
       <ContactForm />
       <ContactMap />
       <NextEvent date={event.date} title={event.name} />

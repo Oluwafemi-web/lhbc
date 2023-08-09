@@ -24,7 +24,9 @@ export default function ContactCard(props) {
           <h5 className={classes.phoneNumberFirstText}>Phone Numbers</h5>
           {props.numbers &&
             props.numbers.map((item, index) => (
-              <p className={classes.phoneNumber1}>{item.number}</p>
+              <p className={classes.phoneNumber1} key={index}>
+                {item}
+              </p>
             ))}
         </div>
         <div className={classes.emailAddress}>

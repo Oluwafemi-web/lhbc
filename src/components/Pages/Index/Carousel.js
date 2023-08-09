@@ -15,7 +15,7 @@ export default function Carousel(props) {
   };
 
   return (
-    <Slider {...settings} className={classes.hero}>
+    <Slider {...settings} className={classes.hero} autoplay>
       {props.carouselData &&
         props.carouselData.map((item, index) => (
           <SliderItems
