@@ -61,7 +61,14 @@ export async function AboutData() {
       }`
     );
 
-    return response[0]; // Assuming the response is an array, you may want to access the first element.
+    const event = await sanityClient.fetch(
+      `*[_type == 'nextevent'] {
+        date,
+        name,
+      }`
+    );
+
+    return [response[0], event[0]]; // Assuming the response is an array, you may want to access the first element.
   } catch (error) {
     console.error("Error fetching data:", error);
     throw error;
@@ -70,14 +77,15 @@ export async function AboutData() {
 
 export default function About() {
   const test = useLoaderData(AboutData);
-  const { banner, nextevent, organizations, sermon, aboutus, diaconate } = test;
+  const [main, event] = test;
+  const { banner, nextevent, organizations, sermon, aboutus, diaconate } = main;
   return (
     <>
       <BannerImg banner={banner} />
       <AboutContent aboutData={aboutus} featured={sermon} />
       <Diaconate deaconDetails={diaconate} />
       <Organizations organizationDetails={organizations} />
-      <NextEvent />
+      <NextEvent date={event.date} title={event.name} />
     </>
   );
 }

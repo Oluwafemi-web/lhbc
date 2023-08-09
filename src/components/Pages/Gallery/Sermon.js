@@ -43,7 +43,14 @@ export async function SermonData() {
       }`
     );
 
-    return response[0]; // Assuming the response is an array, you may want to access the first element.
+    const event = await sanityClient.fetch(
+      `*[_type == 'nextevent'] {
+        date,
+        name,
+      }`
+    );
+
+    return [response[0], event[0]]; // Assuming the response is an array, you may want to access the first element.
   } catch (error) {
     console.error("Error fetching data:", error);
     throw error;
@@ -52,7 +59,9 @@ export async function SermonData() {
 
 export default function Sermon() {
   const test = useLoaderData();
-  const { banner, sermons, years, category } = test;
+  console.log(test);
+  const [sermoninfo, event] = test;
+  const { banner, sermons, years, category } = sermoninfo;
 
   const [filtered, setIsFiltered] = useState(false);
   const [filteredSermons, setFilteredSermons] = useState([]);
@@ -127,8 +136,6 @@ export default function Sermon() {
     }
     console.log(filteredSermons);
   };
-  const test2 = useLoaderData("root");
-  console.log(test2);
 
   return (
     <>
@@ -152,7 +159,7 @@ export default function Sermon() {
         />
         <MessageList message={filtered ? filteredSermons : sermonsParsed} />
       </div>
-      <NextEvent />
+      <NextEvent date={event.date} title={event.name} />
     </>
   );
 }

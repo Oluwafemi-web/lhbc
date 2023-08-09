@@ -22,12 +22,7 @@ export default defineType({
         {
           type: 'object',
           name: 'aboutus',
-          fields: [
-            // {type: 'array', name: 'heading', of: [{type: 'block'}]},
-            // {type: 'array', name: 'subheding', of: [{type: 'block'}]},
-            {type: 'array', name: 'description', of: [{type: 'block'}]},
-            // {type: 'image', name: 'image'},
-          ],
+          fields: [{type: 'array', name: 'description', of: [{type: 'block'}]}],
         },
       ],
     }),
@@ -39,12 +34,7 @@ export default defineType({
         {
           type: 'object',
           name: 'event',
-          fields: [
-            {type: 'string', name: 'title'},
-            // {type: 'string', name: 'time'},
-            // {type: 'array', name: 'description', of: [{type: 'block'}]},
-            // {type: 'image', name: 'image'},
-          ],
+          fields: [{type: 'string', name: 'title'}],
         },
       ],
     }),
@@ -59,9 +49,7 @@ export default defineType({
           fields: [
             {type: 'image', name: 'image'},
             {type: 'string', name: 'heading'},
-            // {type: 'array', name: 'description', of: [{type: 'block'}]},
             {type: 'string', name: 'date'},
-            // {type: 'string', name: 'time'},
           ],
         },
       ],

@@ -4,7 +4,7 @@ import Home, { HomeData } from "./components/Pages/Index/Home";
 import About, { AboutData } from "./components/Pages/About/About";
 import Blog from "./components/Pages/Blog/Blog";
 import Sermon, { SermonData } from "./components/Pages/Gallery/Sermon";
-import Contact from "./components/Pages/Contact/Contact";
+import Contact, { ContactData } from "./components/Pages/Contact/Contact";
 import RootLayout, { GeneralData } from "./components/UI/Root";
 // import sanityClient from "./client";
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
       { path: "/about", element: <About />, loader: AboutData },
       { path: "/sermon", element: <Sermon />, loader: SermonData },
-      { path: "/contact", element: <Contact /> },
+      { path: "/contact", element: <Contact />, loader: ContactData },
       { path: "/blog", element: <Blog /> },
     ],
   },

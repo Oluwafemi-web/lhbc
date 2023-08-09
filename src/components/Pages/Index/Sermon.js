@@ -37,13 +37,6 @@ export default function Sermon(props) {
             <p className={classes.sermonDate}>
               <i>{item.date}</i>
             </p>
-            {/* <p className={classes.sermonContentText}>
-              Lorem ipsum dolor sit amet etur aisicing elit. Nemo laborum labore
-              culpa fugiatias blanditiis doloribus a voluptate natur velit
-              quaerat ipsum iste in, esse officia moitia, harum sit amet
-              reprehenderit nihil facilis. Iure quia dicta ipsum nostrum
-              nesciunt libero aliquid.
-            </p> */}
             <PortableText value={item.description} components={sermon} />
           </div>
         </div>
