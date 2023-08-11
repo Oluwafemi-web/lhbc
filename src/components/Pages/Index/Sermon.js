@@ -13,9 +13,8 @@ export default function Sermon(props) {
     },
   };
   return (
-    props.sermonDetails &&
-    props.sermonDetails.map((item, index) => (
-      <div className={classes.sermon} key={index}>
+    props.sermonDetails && (
+      <div className={classes.sermon}>
         <h3 className={classes.sermonHeader}>
           <FaBible className={classes["fa-book-bible sermonIcon"]} />
           TODAY'S SERMON
@@ -23,24 +22,27 @@ export default function Sermon(props) {
         </h3>
         <div className={classes.sermonContainer}>
           <img
-            src={item.image.asset.url}
+            src={props.sermonDetails.image.asset.url}
             alt=""
             className={classes.sermonImg}
           />
           <div className={classes.sermonContent}>
             <h4 className={classes.sermonContentHeader}>
-              <i>{item.title}</i>
+              <i>{props.sermonDetails.title}</i>
             </h4>
             <p className={classes.preacherName}>
-              <i>- {item.minister}</i>
+              <i>- {props.sermonDetails.preacher}</i>
             </p>
             <p className={classes.sermonDate}>
-              <i>{item.date}</i>
+              <i>{props.sermonDetails.date}</i>
             </p>
-            <PortableText value={item.description} components={sermon} />
+            <PortableText
+              value={props.sermonDetails.description}
+              components={sermon}
+            />
           </div>
         </div>
       </div>
-    ))
+    )
   );
 }

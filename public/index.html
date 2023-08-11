@@ -25,6 +25,29 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      /* Webkit (Safari/Chrome) */
+      ::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 6px;
+        width: 0px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+      }
+
+      /* Firefox */
+      /* Unfortunately, Firefox does not currently support scrollbar styling through CSS */
+
+      /* Edge and Internet Explorer */
+      /* These browsers also have limited support for scrollbar styling through CSS */
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

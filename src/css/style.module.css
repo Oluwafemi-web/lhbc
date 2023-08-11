@@ -44,6 +44,7 @@
   font-weight: 500;
   font-size: 1.1rem;
   margin: 0rem 0rem 1rem 0rem;
+  animation: slideinup 500ms ease-in;
 }
 
 .bannerSecondText {
@@ -7064,5 +7065,15 @@
     top: 0.9rem;
     left: 0rem;
     background: #8b0000;
+  }
+}
+@keyframes slideinup {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
