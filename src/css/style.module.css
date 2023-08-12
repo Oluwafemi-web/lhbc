@@ -53,6 +53,7 @@
   font-size: 2rem;
   text-align: center;
   margin: 0rem 0rem 1rem 0rem;
+  animation: slideinup 500ms ease-in 500ms;
 }
 
 .bannerThirdText {
@@ -63,6 +64,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0rem 0rem 1rem 0rem;
+  animation: slideinup 500ms ease-in 1s;
 }
 
 .bannerButton {
@@ -114,6 +116,10 @@
 
 .ask2 {
   margin: 1.5rem 0rem 0rem 0rem;
+}
+.ask1:hover,
+.ask2:hover {
+  transform: scale(1.1);
 }
 
 .askDate {
@@ -7076,4 +7082,9 @@
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+.homelink a {
+  color: #d81414;
+  text-decoration: underline;
 }

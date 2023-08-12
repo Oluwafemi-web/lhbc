@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import classes from "../../../css/style.module.css";
 import { PortableText } from "@portabletext/react";
+import { motion } from "framer-motion";
 
 export default function Donation(props) {
   const donate = {
@@ -30,8 +31,15 @@ export default function Donation(props) {
         }}
       >
         <FaStar className={classes["fa-star"]} />
-        <PortableText value={item.heading} components={donate} />
-        <PortableText value={item.description} components={donatedetail} />
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "linear", duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <PortableText value={item.heading} components={donate} />
+          <PortableText value={item.description} components={donatedetail} />
+        </motion.div>
         <button className={classes.donationButton1}>
           <a href="#" className={classes.donationButton}>
             DONATE

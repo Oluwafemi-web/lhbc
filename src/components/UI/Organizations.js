@@ -11,6 +11,7 @@ export default function Organizations(props) {
           props.organizationDetails.map((item, index) => (
             <OrganizationItems
               key={index}
+              duration={index * 0.5}
               image={item.image.asset.url}
               heading={item.organization}
               description={item.description}

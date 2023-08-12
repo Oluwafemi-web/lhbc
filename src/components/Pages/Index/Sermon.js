@@ -1,6 +1,7 @@
 import { FaBible } from "react-icons/fa";
 import { PortableText } from "@portabletext/react";
 import classes from "../../../css/style.module.css";
+import { motion } from "framer-motion";
 
 export default function Sermon(props) {
   const sermon = {
@@ -21,12 +22,22 @@ export default function Sermon(props) {
           <FaBible className={classes["fa-book-bible sermonIcon"]} />
         </h3>
         <div className={classes.sermonContainer}>
-          <img
+          <motion.img
             src={props.sermonDetails.image.asset.url}
             alt=""
             className={classes.sermonImg}
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "linear", duration: 0.5 }}
+            viewport={{ once: true }}
           />
-          <div className={classes.sermonContent}>
+          <motion.div
+            className={classes.sermonContent}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "linear", duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <h4 className={classes.sermonContentHeader}>
               <i>{props.sermonDetails.title}</i>
             </h4>
@@ -40,7 +51,7 @@ export default function Sermon(props) {
               value={props.sermonDetails.description}
               components={sermon}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     )

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaHeart, FaBible } from "react-icons/fa";
 import { PortableText } from "@portabletext/react";
 import classes from "../../../css/style.module.css";
+import { motion } from "framer-motion";
 
 export default function IndexAbout(props) {
   const heading = {
@@ -33,7 +34,13 @@ export default function IndexAbout(props) {
     props.aboutDetails.map((item, index) => (
       <div className={classes.about} key={index}>
         <Upcoming eventDetails={props.eventDetails} />
-        <div className={classes.aboutContainer}>
+        <motion.div
+          className={classes.aboutContainer}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "linear", duration: 1 }}
+          viewport={{ once: true }}
+        >
           <div
             className={classes.aboutImg}
             style={{
@@ -77,7 +84,7 @@ export default function IndexAbout(props) {
               </Link>
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     ))
   );

@@ -1,9 +1,14 @@
 import { FaCalendarDay } from "react-icons/fa";
 import classes from "../../../css/style.module.css";
+import { motion } from "framer-motion";
 
 export default function Events(props) {
   return (
-    <div className={classes[`${props.name}`]}>
+    <motion.div
+      className={classes[`${props.name}`]}
+      animate={{ x: 100 }}
+      transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
+    >
       <div className={classes.askDate}>
         <FaCalendarDay
           style={{ color: "#ac0909" }}
@@ -21,6 +26,6 @@ export default function Events(props) {
           </a>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

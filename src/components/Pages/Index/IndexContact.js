@@ -2,6 +2,7 @@ import { FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import classes from "../../../css/style.module.css";
 import { PortableText } from "@portabletext/react";
+import { motion } from "framer-motion";
 export default function IndexContact(props) {
   const description = {
     types: {
@@ -32,7 +33,13 @@ export default function IndexContact(props) {
         }}
       >
         <div className={classes.contactContainer}>
-          <div className={classes.contactCard}>
+          <motion.div
+            className={classes.contactCard}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ease: "linear", duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <FaPhone className={classes["fa-phone-volume"]} />
             {/* <i className={classes.fa-solid fa-phone-volume" /> */}
             <h3 className={classes.callUs}>Call Us</h3>
@@ -40,8 +47,14 @@ export default function IndexContact(props) {
             <p className={classes.phoneNumber}>{item.number}</p>
             <p className={classes.gmail}>{item.email}</p>
             <PortableText value={item.address} components={address} />
-          </div>
-          <div className={classes.contactContent}>
+          </motion.div>
+          <motion.div
+            className={classes.contactContent}
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "linear", duration: 1 }}
+            viewport={{ once: true }}
+          >
             <p className={classes.getInTouch}>GET IN TOUCH</p>
             <p className={classes.contactContentHeader}>{item.heading}</p>
             {/* undeerline icon here */}
@@ -51,7 +64,7 @@ export default function IndexContact(props) {
                 CONTACT US
               </Link>
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     ))
