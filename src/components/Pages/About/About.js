@@ -82,7 +82,7 @@ export default function About() {
   return (
     <>
       <BannerImg banner={banner} />
-      <AboutContent aboutData={aboutus} featured={sermon} />
+      <AboutContent aboutData={aboutus} />
       <Diaconate deaconDetails={diaconate} />
       <Organizations organizationDetails={organizations} />
       <NextEvent date={event.date} title={event.name} />

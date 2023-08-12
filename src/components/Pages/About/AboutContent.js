@@ -41,7 +41,7 @@ export default function AboutContent(props) {
             <PortableText value={item.heading} />
             <PortableText value={item.description} />
           </div>
-          <div className={classes.message}>
+          {/* <div className={classes.message}>
             {props.featured &&
               props.featured.map((item, index) => (
                 <FeaturedSermon
@@ -51,7 +51,7 @@ export default function AboutContent(props) {
                   date={item.date}
                 />
               ))}
-          </div>
+          </div> */}
         </div>
       </div>
     ))
