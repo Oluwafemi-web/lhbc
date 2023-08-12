@@ -6,7 +6,7 @@ export default function Events(props) {
   return (
     <motion.div
       className={classes[`${props.name}`]}
-      animate={{ x: 100 }}
+      animate={{ x: 0 }}
       transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
     >
       <div className={classes.askDate}>

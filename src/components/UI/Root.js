@@ -47,7 +47,6 @@ export default function RootLayout() {
       setLoading(false);
     }, 3000);
   }, [navigation.state]);
-  console.log(navigation);
   const test = useLoaderData();
   const { quicklinks, aboutus, updates } = test;
   return navigation.state === "loading" || loading ? (

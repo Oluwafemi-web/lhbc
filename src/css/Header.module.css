@@ -134,7 +134,7 @@
 }
 @media screen and (min-width: 375px) {
   .header {
-    width: 100%;
+    width: 100vw;
     height: 4rem;
     position: fixed;
     z-index: 999;
@@ -202,6 +202,7 @@
 
   .hamburger:checked ~ .navMenu {
     visibility: visible;
+    display: block;
   }
 
   .hamburger:checked ~ .navMenu .headerHome,
@@ -236,6 +237,7 @@
     padding: 0rem 1rem 0rem 1rem;
     background: #011635;
     visibility: hidden;
+    display: none;
     max-height: 20rem;
     width: 100%;
     overflow: hidden;

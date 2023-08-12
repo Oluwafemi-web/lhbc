@@ -5,6 +5,7 @@
 }
 .preloader-wrapper img {
   animation: pop 2s infinite;
+  width: 100%;
 }
 
 @keyframes pop {

@@ -1,5 +1,6 @@
 import classes from "../../../css/about.module.css";
 import { PortableText } from "@portabletext/react";
+import { motion } from "framer-motion";
 import { FaPlay } from "react-icons/fa";
 import FeaturedSermon from "./FeaturedSermon";
 export default function AboutContent(props) {
@@ -30,17 +31,27 @@ export default function AboutContent(props) {
     props.aboutData.map((item, index) => (
       <div className={classes.aboutContent} key={index}>
         <div className={classes.aboutContentContainer}>
-          <div
+          <motion.div
             className={classes.aboutContentImg}
             style={{
               background: `url(${item.image.asset.url}) center/cover no-repeat`,
             }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "linear", duration: 0.5 }}
+            viewport={{ once: true }}
           />
-          <div className={classes.aboutContentText}>
+          <motion.div
+            className={classes.aboutContentText}
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "linear", duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <p className={classes.aboutContentFirstText}>ABOUT US</p>
             <PortableText value={item.heading} />
             <PortableText value={item.description} />
-          </div>
+          </motion.div>
           {/* <div className={classes.message}>
             {props.featured &&
               props.featured.map((item, index) => (
