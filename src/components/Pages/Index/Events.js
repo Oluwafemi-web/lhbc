@@ -1,12 +1,15 @@
 import { FaCalendarDay } from "react-icons/fa";
 import classes from "../../../css/style.module.css";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 export default function Events(props) {
+  const mobile = useMediaQuery({ maxWidth: 576 });
+
   return (
     <motion.div
       className={classes[`${props.name}`]}
-      animate={{ x: 0 }}
+      animate={{ x: mobile ? 0 : 50 }}
       transition={{ type: "spring", stiffness: 100, duration: 0.5 }}
     >
       <div className={classes.askDate}>

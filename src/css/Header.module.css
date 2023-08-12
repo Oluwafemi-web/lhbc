@@ -273,7 +273,7 @@
 }
 @media screen and (min-width: 476px) {
   .header {
-    width: 100%;
+    width: 100vw;
     height: 4rem;
     position: fixed;
     z-index: 999;
@@ -406,7 +406,7 @@
 }
 @media screen and (min-width: 576px) {
   .header {
-    width: 100%;
+    width: 100vw;
     height: 4rem;
     position: fixed;
     z-index: 999;
@@ -540,7 +540,7 @@
 @media screen and (min-width: 768px) {
   .header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     z-index: 999;
     background: #01163566;
@@ -664,7 +664,7 @@
 @media screen and (min-width: 900px) {
   .header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     z-index: 999;
   }
@@ -771,7 +771,7 @@
 @media screen and (min-width: 1024px) {
   .header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     z-index: 999;
   }
@@ -878,7 +878,7 @@
 @media screen and (min-width: 1200px) {
   .header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     z-index: 999;
   }
@@ -984,7 +984,7 @@
 }
 @media screen and (max-width: 279px) and (min-height: 300px) {
   .header {
-    width: 100%;
+    width: 100vw;
     height: 3.5rem;
     position: fixed;
     z-index: 999;
@@ -997,7 +997,7 @@
 @media screen and (min-width: 1400px) {
   .header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     z-index: 999;
   }

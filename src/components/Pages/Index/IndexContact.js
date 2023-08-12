@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import classes from "../../../css/style.module.css";
 import { PortableText } from "@portabletext/react";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 export default function IndexContact(props) {
+  const mobile = useMediaQuery({ maxWidth: 576 });
   const description = {
     types: {
       block: ({ value }) => {
@@ -50,8 +52,8 @@ export default function IndexContact(props) {
           </motion.div>
           <motion.div
             className={classes.contactContent}
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "linear", duration: 1 }}
             viewport={{ once: true }}
           >

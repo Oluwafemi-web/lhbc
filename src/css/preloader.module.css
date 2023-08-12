@@ -5,7 +5,12 @@
 }
 .preloader-wrapper img {
   animation: pop 2s infinite;
-  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .preloader-wrapper img {
+    animation: pop 2s infinite;
+    width: 100%;
+  }
 }
 
 @keyframes pop {
