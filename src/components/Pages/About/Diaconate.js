@@ -11,6 +11,7 @@ export default function Diaconate(props) {
             props.deaconDetails.map((item, index) => (
               <DiaconateItem
                 key={index}
+                duration={index * 0.5}
                 image={item.image.asset.url}
                 name={item.name}
               />
