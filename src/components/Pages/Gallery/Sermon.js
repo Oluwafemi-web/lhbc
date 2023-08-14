@@ -1,3 +1,4 @@
+import React, { useRef, useCallback, useState } from "react";
 import BannerImg from "./BannerImg";
 import LatestMessage from "./LatestMessage";
 import MessageList from "./MessageList";
@@ -7,7 +8,6 @@ import classes from "../../../css/gallery.module.css";
 import sanityClient from "../../../client";
 import { useLoaderData } from "react-router-dom";
 import parse from "date-fns/parse";
-import { useRef, useState } from "react";
 
 export async function SermonData() {
   try {
@@ -58,84 +58,58 @@ export async function SermonData() {
 }
 
 export default function Sermon() {
-  const test = useLoaderData();
-  console.log(test);
-  const [sermoninfo, event] = test;
+  const [sermoninfo, event] = useLoaderData();
   const { banner, sermons, years, category } = sermoninfo;
-
-  const [filtered, setIsFiltered] = useState(false);
-  const [filteredSermons, setFilteredSermons] = useState([]);
 
   const yearRef = useRef(null);
   const categoryRef = useRef(null);
-  //get the dates from the sermons array
-  const dates = sermons.map((item) => item.date);
 
-  //parse dates into computer format
-  const parsedDate = dates.map((element) => {
-    const formattedInput = element.replace(/(\d+)(st|nd|rd|th)/, "$1"); // Remove the 'st', 'nd', 'rd', or 'th' suffix.
+  const parsedDate = sermons.map((item) =>
+    parse(
+      item.date.replace(/(\d+)(st|nd|rd|th)/, "$1"),
+      "d MMMM yyyy",
+      new Date()
+    )
+  );
 
-    return parse(formattedInput, "d MMMM yyyy", new Date());
-  });
+  const sermonsParsed = sermons.map((item, index) => ({
+    ...item,
+    parsedDate: parsedDate[index],
+  }));
 
-  //add parsed dates to the objects
-  var sermonsParsed = sermons.map((item, index) => {
-    parsedDate.forEach((parsed) => {
-      item.parsedDate = parsed;
-    });
-    return item;
-  });
-
-  // get the latest sermon from the parsed sermon array
-  sermonsParsed = sermons.map((item, index) => {
-    return {
-      ...item,
-      parsedDate: parsedDate[index], // Assign the parsedDate to each sermon item
-    };
-  });
-
-  // Sort sermonsParsed array in descending order based on parsedDate
   sermonsParsed.sort((a, b) => b.parsedDate - a.parsedDate);
-
-  // Get the latest item from the sorted array
-
   const latestSermon = sermonsParsed[0];
 
-  const handleYearHandler = () => {
-    const yearValue = yearRef.current.value;
-    const filterCondition = (item) =>
-      item.parsedDate.getFullYear() === +yearValue;
-
+  const handleYearHandler = useCallback(() => {
+    const yearValue = yearRef.current.state.values[0]?.year || "all";
     if (yearValue === "#" || yearValue === "all") {
-      return;
-    } else {
+      setFilteredSermons([]);
       setIsFiltered(false);
-      setIsFiltered(true);
-      const sermonFiltered = (
-        filteredSermons.length !== 0 ? filteredSermons : sermonsParsed
-      ).filter(filterCondition);
-      setFilteredSermons(sermonFiltered);
-      // return sermonFiltered;
-    }
-  };
-
-  const categoryHandler = () => {
-    const categoryValue = categoryRef.current.value;
-    console.log(categoryValue);
-    const filterCondition = (item) => item.category === categoryValue;
-
-    if (categoryValue === "#" || categoryValue == "all") {
-      setIsFiltered(false);
-      return;
     } else {
-      setIsFiltered(true);
-      const sermonFiltered = (
-        filteredSermons.length !== 0 ? filteredSermons : sermonsParsed
-      ).filter(filterCondition);
+      const sermonFiltered = sermonsParsed.filter(
+        (item) => item.parsedDate.getFullYear() === +yearValue
+      );
       setFilteredSermons(sermonFiltered);
+      setIsFiltered(true);
     }
-    console.log(filteredSermons);
-  };
+  }, [sermonsParsed]);
+
+  const categoryHandler = useCallback(() => {
+    const categoryValue = categoryRef.current.state.values[0]?.category;
+    if (categoryValue === "#" || categoryValue === "all") {
+      setFilteredSermons([]);
+      setIsFiltered(false);
+    } else {
+      const sermonFiltered = sermonsParsed.filter(
+        (item) => item.category === categoryValue
+      );
+      setFilteredSermons(sermonFiltered);
+      setIsFiltered(true);
+    }
+  }, [sermonsParsed]);
+
+  const [filteredSermons, setFilteredSermons] = useState([]);
+  const [isFiltered, setIsFiltered] = useState(false);
 
   return (
     <>
@@ -157,7 +131,7 @@ export default function Sermon() {
           description={latestSermon.description}
           audio={latestSermon.audioURL}
         />
-        <MessageList message={filtered ? filteredSermons : sermonsParsed} />
+        <MessageList message={isFiltered ? filteredSermons : sermonsParsed} />
       </div>
       <NextEvent date={event.date} title={event.name} />
     </>

@@ -1,12 +1,28 @@
 import classes from "../../../css/gallery.module.css";
 import { FaSearch } from "react-icons/fa";
 import { forwardRef } from "react";
+import Select from "react-dropdown-select";
 
 const SideBar = forwardRef((props, ref) => {
+  const options = props.category;
+  const yearoptions = props.years;
+  // console.log(options);
   return (
     <div className={classes.sideBar}>
       <div className={classes.sideBarContainer}>
-        <select
+        <Select
+          style={{ width: "20rem", padding: "20px" }}
+          ref={props.categoryRef}
+          className={classes.categoryBar}
+          onChange={props.handleCategoryChange}
+          placeholder="Category"
+          labelField="category"
+          valueField="category"
+          options={options}
+          searchable
+          clearable
+        />
+        {/* <select
           className={classes.categoryBar}
           ref={props.categoryRef}
           onChange={props.handleCategoryChange}
@@ -22,26 +38,20 @@ const SideBar = forwardRef((props, ref) => {
                 {item.category}
               </option>
             ))}
-        </select>
+        </select> */}
         <form className={classes.searchBarContainer}>
-          <select
-            name="year"
-            id="year"
+          <Select
+            style={{ borderRadius: "0.3rem" }}
             className={classes.yearBar}
             ref={props.yearRef}
             onChange={props.handleYearChange}
-          >
-            <option value="#" disabled selected hidden>
-              Year
-            </option>
-            <option value="all">All</option>
-            {props.years &&
-              props.years.map((item, index) => (
-                <option value={item.year} key={index}>
-                  {item.year}
-                </option>
-              ))}
-          </select>
+            placeholder="Year"
+            labelField="year"
+            valueField="year"
+            options={yearoptions}
+            searchable
+            clearable
+          />
           <input
             type="search"
             name=""
