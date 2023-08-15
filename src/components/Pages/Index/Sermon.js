@@ -26,15 +26,15 @@ export default function Sermon(props) {
             src={props.sermonDetails.image.asset.url}
             alt=""
             className={classes.sermonImg}
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "linear", duration: 0.5 }}
             viewport={{ once: true }}
           />
           <motion.div
             className={classes.sermonContent}
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "linear", duration: 0.5 }}
             viewport={{ once: true }}
           >
