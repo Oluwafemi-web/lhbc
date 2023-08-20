@@ -44,7 +44,7 @@ export default function IndexAbout(props) {
           <div
             className={classes.aboutImg}
             style={{
-              background: `url(${item.image.asset.url}) center/cover no-repeat`,
+              background: `url(${item.image.asset.url}) top center/cover no-repeat`,
             }}
           />
           <div className={classes.aboutContent}>

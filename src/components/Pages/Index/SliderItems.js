@@ -36,7 +36,7 @@ export default function SliderItems(props) {
       style={{
         background: `
           linear-gradient(rgba(1, 22, 53, 0.745), rgba(1, 22, 53, 0.745)),
-          url(${props.img}) fixed
+          url(${props.img})
         `,
       }}
     >

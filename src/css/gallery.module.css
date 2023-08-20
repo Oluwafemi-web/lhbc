@@ -152,6 +152,8 @@
   justify-content: center;
   /* background: linear-gradient(#011635be, #011635be),
     url(../images/Placeholder4.jpeg) fixed; */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 .galleryBannerMainText {

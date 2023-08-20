@@ -34,6 +34,8 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem 4rem;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   /* background: linear-gradient(#011635be, #011635be),
     url(../images/Placeholder4.jpeg) fixed; */
 }
