@@ -138,8 +138,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#011635be, #011635be),
-    url(../images/Placeholder4.jpeg) fixed;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .contactBannerMainText {
@@ -931,8 +931,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#011635be, #011635be),
-      url(../images/Placeholder4.jpeg) fixed;
   }
 
   .contactBannerMainText {
@@ -1723,8 +1721,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#011635be, #011635be),
-      url(../images/Placeholder4.jpeg) fixed;
   }
 
   .contactBannerMainText {
@@ -2517,8 +2513,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#011635be, #011635be),
-      url(../images/Placeholder4.jpeg) fixed;
   }
 
   .contactBannerMainText {
@@ -3316,8 +3310,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#011635be, #011635be),
-      url(../images/Placeholder4.jpeg) fixed;
   }
 
   .contactBannerMainText {
@@ -4111,8 +4103,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#011635be, #011635be),
-      url(../images/Placeholder4.jpeg) fixed;
   }
 
   .contactBannerMainText {
@@ -4892,8 +4882,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#011635be, #011635be),
-      url(../images/Placeholder4.jpeg) fixed;
   }
 
   .contactBannerMainText {
@@ -5679,8 +5667,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#011635be, #011635be),
-      url(../images/Placeholder4.jpeg) fixed;
   }
 
   .contactBannerMainText {
@@ -8725,7 +8711,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#011635be, #011635be),
-      url(../images/Placeholder4.jpeg) fixed;
   }
 }

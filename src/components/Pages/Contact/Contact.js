@@ -44,7 +44,7 @@ export default function Contact() {
   const { contactus } = main;
   return (
     <>
-      <BannerImg />
+      <BannerImg banner={contactus} />
       <ContactCard numbers={contactus[0].numbers} email={contactus[0].email} />
       <ContactForm />
       <ContactMap />
