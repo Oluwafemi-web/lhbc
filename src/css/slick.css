@@ -2,6 +2,8 @@
 .slick-next,
 .slick-prev {
   font-size: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 .slick-next {
   right: 2% !important;
