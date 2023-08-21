@@ -1,4 +1,8 @@
 /* slick carousel styling */
+.slick-next,
+.slick-prev {
+  font-size: 40px !important;
+}
 .slick-next {
   right: 2% !important;
   z-index: 3;
