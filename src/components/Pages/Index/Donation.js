@@ -35,7 +35,7 @@ export default function Donation(props) {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ ease: "linear", duration: 0.5 }}
-          viewport={{ once: true }}
+          // viewport={{ once: true }}
         >
           <PortableText value={item.heading} components={donate} />
           <PortableText value={item.description} components={donatedetail} />

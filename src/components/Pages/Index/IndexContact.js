@@ -39,8 +39,8 @@ export default function IndexContact(props) {
             className={classes.contactCard}
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: "linear", duration: 0.5 }}
-            viewport={{ once: true }}
+            transition={{ ease: "linear", duration: 0.5, delay: 0.5 }}
+            // viewport={{ once: true }}
           >
             <FaPhone className={classes["fa-phone-volume"]} />
             {/* <i className={classes.fa-solid fa-phone-volume" /> */}
@@ -55,7 +55,7 @@ export default function IndexContact(props) {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "linear", duration: 1 }}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
           >
             <p className={classes.getInTouch}>GET IN TOUCH</p>
             <p className={classes.contactContentHeader}>{item.heading}</p>

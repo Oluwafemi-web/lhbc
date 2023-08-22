@@ -29,14 +29,14 @@ export default function Sermon(props) {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "linear", duration: 0.5 }}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
           />
           <motion.div
             className={classes.sermonContent}
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ease: "linear", duration: 0.5 }}
-            viewport={{ once: true }}
+            transition={{ ease: "linear", duration: 0.5, delay: 0.5 }}
+            // viewport={{ once: true }}
           >
             <h4 className={classes.sermonContentHeader}>
               <i>{props.sermonDetails.title}</i>

@@ -16,7 +16,7 @@ export default function OrganizationItems(props) {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ ease: "linear", duration: props.duration }}
-      viewport={{ once: true }}
+      // viewport={{ once: true }}
     >
       <div
         className={classes["unionImg"]}
