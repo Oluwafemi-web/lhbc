@@ -177,7 +177,7 @@ export default function Home() {
         aboutDetails={aboutus}
         keyPoints={aboutkeys}
       />
-      <Donation donationDetails={donate} />
+      {/* <Donation donationDetails={donate} /> */}
       <Sermon sermonDetails={latestSermon} />
       <Organizations organizationDetails={organizations} />
       <IndexContact contactDetails={getintouch} />
