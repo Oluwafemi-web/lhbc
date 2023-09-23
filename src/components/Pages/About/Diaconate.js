@@ -5,7 +5,7 @@ export default function Diaconate(props) {
     <div className={classes.diaconate}>
       <div className={classes.diaconateContainer}>
         <p className={classes.diaconateFirstText}>Diaconate</p>
-        <h3 className={classes.diaconateHeader}>CHURCH DEACONS</h3>
+        <h3 className={classes.diaconateHeader}>SERVING DEACONS</h3>
         <div className={classes.deaconsList}>
           {props.deaconDetails &&
             props.deaconDetails.map((item, index) => (
