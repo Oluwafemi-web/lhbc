@@ -27,7 +27,6 @@ body {
   /* background: linear-gradient(#011635be, #011635be),
     url(../images/Placeholder4.jpeg) fixed; */
 }
-
 .banner {
   width: 100%;
   height: 100vh;
@@ -372,6 +371,7 @@ body {
   align-items: start;
   padding: 1rem 0.5rem 1rem 0.5rem;
   background: url(../images/icon.svg) bottom/contain no-repeat;
+  margin-top: 5%;
 }
 
 .sermonContainer {

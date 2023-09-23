@@ -49,23 +49,23 @@ export default defineType({
         },
       ],
     }),
-    defineField({
-      title: 'Featured Sermon',
-      type: 'array',
-      name: 'sermon',
-      of: [
-        {
-          type: 'object',
-          name: 'event',
-          fields: [
-            {type: 'string', name: 'title'},
-            {type: 'string', name: 'preacher'},
-            {type: 'string', name: 'date'},
-            // {type: 'image', name: 'image'},
-          ],
-        },
-      ],
-    }),
+    // defineField({
+    //   title: 'Featured Sermon',
+    //   type: 'array',
+    //   name: 'sermon',
+    //   of: [
+    //     {
+    //       type: 'object',
+    //       name: 'event',
+    //       fields: [
+    //         {type: 'string', name: 'title'},
+    //         {type: 'string', name: 'preacher'},
+    //         {type: 'string', name: 'date'},
+    //         // {type: 'image', name: 'image'},
+    //       ],
+    //     },
+    //   ],
+    // }),
 
     defineField({
       title: 'Diaconate',

@@ -1,10 +1,10 @@
 import Carousel from "./Carousel";
 import IndexAbout from "./IndexAbout";
-import Donation from "./Donation";
+// import Donation from "./Donation";
 import Sermon from "./Sermon";
 import Organizations from "../../UI/Organizations";
 import IndexContact from "./IndexContact";
-import IndexBlog from "./IndexBlog";
+// import IndexBlog from "./IndexBlog";
 import parse from "date-fns/parse";
 
 import { useLoaderData } from "react-router-dom";

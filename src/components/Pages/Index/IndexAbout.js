@@ -51,7 +51,7 @@ export default function IndexAbout(props) {
             <p className={classes.about_us}>ABOUT US</p>
             <PortableText value={item.heading} components={heading} />
             <PortableText value={item.description} components={description} />
-            <div className={classes.messageContainer}>
+            {/* <div className={classes.messageContainer}>
               {props.keyPoints &&
                 props.keyPoints.map((item, index) => (
                   <div
@@ -69,15 +69,7 @@ export default function IndexAbout(props) {
                   </div>
                 ))}
 
-              {/* <div className={classes.shortMessage2}>
-                <FaBible className={classes["fa-book-bible"]} />
-                <h5 className={classes.shortMessageHeader}>The Word of God</h5>
-                <p className={classes.message}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Libero, quasi!
-                </p>
-              </div> */}
-            </div>
+            </div> */}
             <button className={classes.aboutButton}>
               <Link to="/about" className={classes.aboutButton}>
                 LEARN MORE
