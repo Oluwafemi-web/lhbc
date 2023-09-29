@@ -1,5 +1,5 @@
 import {
-  FaFacebook,
+  FaFacebookF,
   FaTwitter,
   FaYoutube,
   FaInstagram,
@@ -27,7 +27,7 @@ export default function Footer(props) {
             <div key={index} className={classes.footerAbout}>
               <h4 className={classes.footerAboutHeader}>About US</h4>
               <PortableText value={item.description} components={about} />
-              <div className={classes.socials}>
+              {/* <div className={classes.socials}>
                 <div className={classes.socialIcon}>
                   <FaFacebook className={classes.facebook} />
                 </div>
@@ -40,28 +40,53 @@ export default function Footer(props) {
                 <div className={classes.socialIcon}>
                   <FaInstagram className={classes.instagram} />
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
 
-        <div className={classes.footerLinks}>
+        {/* <div className={classes.footerLinks}>
           <h4 className={classes.footerLinksHeader}>Quick Links</h4>
           {props.quicklinks &&
             props.quicklinks.map((item, index) => (
-              <QuickLinks quicklink={item.title} key={index} />
+              <QuickLinks quicklink={item.title} key={index * 20} />
             ))}
-        </div>
+        </div> */}
         <div className={classes.footerUpdates}>
-          <h4 className={classes.footerUpdatesHeader}>Updates</h4>
-          {props.updates &&
-            props.updates.map((item, index) => (
-              <>
-                <Updates title={item.heading} date={item.date} key={index} />
-                {/* <hr /> */}
-              </>
-            ))}
+          <h4 className={classes.footerUpdatesHeader}>Connect with Us</h4>
+          <div className={classes.socialsf}>
+            <ul>
+              <li>
+                <a
+                  className={`${classes.icon} ${classes.facebook}`}
+                  href="https://web.facebook.com/profile.php?id=100082955765174"
+                  target="_blank"
+                >
+                  <FaFacebookF />
+                </a>
+              </li>
+              <li>
+                <a
+                  className={`${classes.icon} ${classes.instagram}`}
+                  href="https://www.instagram.com/lhbc_phc/"
+                  target="_blank"
+                >
+                  <FaInstagram />
+                </a>
+              </li>
+              <li>
+                <a className={`${classes.icon} ${classes.twitter}`} href="#">
+                  <FaTwitter />
+                </a>
+              </li>
+              <li>
+                <a className={`${classes.icon} ${classes.pinterest}`} href="#">
+                  <FaYoutube />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className={classes.footerNewsletter}>
+        {/* <div className={classes.footerNewsletter}>
           <h4 className={classes.footerNewsletterHeader}>Newsletter</h4>
           <p className={classes.footerNewsletterText}>
             Sign up to receive daily updates and live feeds.
@@ -81,7 +106,7 @@ export default function Footer(props) {
               Sign Up
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
       <dt />
       <div className={classes["copyright - Container"]}>
