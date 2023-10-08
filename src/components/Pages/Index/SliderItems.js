@@ -31,29 +31,44 @@ export default function SliderItems(props) {
   };
   //   console.log(myPortableTextComponents);
   return (
-    <>
-      {/* <img
-        src={props.img}
-        style={{ position: "absolute", top: 0, width: "100%" }}
-      /> */}
-      <div
-        className={classes.banner}
+    <div
+      className={classes.banner}
+      style={{
+        background: `
+            linear-gradient(rgba(1, 22, 53, 0.745), rgba(1, 22, 53, 0.745)),
+            url(${props.img})
+          `,
+      }}
+    >
+      <PortableText value={props.heading} components={h3tags} />
+      <PortableText value={props.subheading} components={h1tags} />
+      <PortableText value={props.description} components={ptags} />
+      <button className={classes.bannerButton}>
+        <Link to="/contact" className={classes.bannerButton}>
+          CONTACT US
+        </Link>
+      </button>
+    </div>
+  );
+}
+
+{
+  /* <div
         style={{
-          background: `
-          linear-gradient(rgba(1, 22, 53, 0.745), rgba(1, 22, 53, 0.745)),
-          url(${props.img})
-        `,
+          position: "absolute",
+          width: "100vw",
+          // top: "0",
+          // zIndex: "-1",
         }}
       >
-        <PortableText value={props.heading} components={h3tags} />
-        <PortableText value={props.subheading} components={h1tags} />
-        <PortableText value={props.description} components={ptags} />
-        <button className={classes.bannerButton}>
-          <Link to="/contact" className={classes.bannerButton}>
-            CONTACT US
-          </Link>
-        </button>
-      </div>
-    </>
-  );
+        <img
+          src={props.img}
+          style={{
+            // position: "absolute",
+            width: "100%",
+            top: "0",
+            // zIndex: "-1",
+          }}
+        />
+      </div> */
 }

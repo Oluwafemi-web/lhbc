@@ -109,7 +109,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* width: 100%; */
+  width: 80%;
   height: 6rem;
   border-radius: 1rem;
   background: #fff;
@@ -127,7 +127,7 @@ body {
 }
 
 .askDate {
-  width: 30%;
+  width: 5rem;
   height: 4rem;
   display: flex;
   flex-direction: column;
@@ -5719,7 +5719,7 @@ body {
   }
 
   .askDate {
-    width: 90%;
+    width: 6rem;
     height: 5.5rem;
     display: flex;
     display: grid;
