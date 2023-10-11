@@ -7091,3 +7091,12 @@ body {
   color: #d81414;
   text-decoration: underline;
 }
+.pastor-name {
+  margin: 3rem 0rem 0rem 0rem;
+}
+
+.pastor-title {
+  font-weight: bold;
+  font-style: italic;
+  color: #8b0000;
+}

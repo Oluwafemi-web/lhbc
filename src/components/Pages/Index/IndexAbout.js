@@ -41,12 +41,16 @@ export default function IndexAbout(props) {
           transition={{ ease: "linear", duration: 1 }}
           // viewport={{ once: true }}
         >
-          <div
-            className={classes.aboutImg}
-            style={{
-              background: `url(${item.image.asset.url}) top center/cover no-repeat`,
-            }}
-          />
+          <div className={classes["about-im"]}>
+            <div
+              className={classes.aboutImg}
+              style={{
+                background: `url(${item.image.asset.url}) top center/cover no-repeat`,
+              }}
+            />
+            <h2 className={classes["pastor-name"]}>Revd Dr Steve Ayorinde</h2>
+            <p className={classes["pastor-title"]}>Church pastor</p>
+          </div>
           <div className={classes.aboutContent}>
             <p className={classes.about_us}>ABOUT US</p>
             <PortableText value={item.heading} components={heading} />

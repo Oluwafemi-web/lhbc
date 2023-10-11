@@ -5,6 +5,7 @@ import Organizations from "../../UI/Organizations";
 import NextEvent from "../../UI/NextEvent";
 import sanityClient from "../../../client";
 import { useLoaderData } from "react-router-dom";
+import PastorandWife from "./PastorandWife";
 
 export async function AboutData() {
   try {
@@ -26,6 +27,11 @@ export async function AboutData() {
           },
           heading,
           description,
+        },
+        pastorandwife{
+          asset->{
+            url
+          }
         },
         diaconate[]{
           image{
@@ -78,11 +84,20 @@ export async function AboutData() {
 export default function About() {
   const test = useLoaderData(AboutData);
   const [main, event] = test;
-  const { banner, nextevent, organizations, sermon, aboutus, diaconate } = main;
+  const {
+    banner,
+    nextevent,
+    organizations,
+    sermon,
+    aboutus,
+    diaconate,
+    pastorandwife,
+  } = main;
   return (
     <>
       <BannerImg banner={banner} />
       <AboutContent aboutData={aboutus} />
+      <PastorandWife img={pastorandwife.asset.url} />
       <Diaconate deaconDetails={diaconate} />
       <Organizations organizationDetails={organizations} />
       <NextEvent date={event.date} title={event.name} />

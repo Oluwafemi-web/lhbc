@@ -23,11 +23,11 @@ export default function Events(props) {
       </div>
       <div className={classes.askText}>
         <h4 className={classes.askHeader}>{props.eventname}</h4>
-        {/* <p>
+        <p>
           <a href="#" className={classes.askDetails}>
             Event Details
           </a>
-        </p> */}
+        </p>
       </div>
     </motion.div>
   );

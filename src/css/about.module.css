@@ -9288,3 +9288,24 @@
       url(../images/Placeholder4.jpeg) fixed; */
   }
 }
+.pastor-and-wife {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+.pastor-img {
+  width: 50%;
+  /* height: 20rem; */
+  object-fit: cover;
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+.pastor-and-wife-text {
+  font-family: "inter", sans-serif;
+  font-style: italic;
+}
