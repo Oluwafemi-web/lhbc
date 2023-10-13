@@ -22,6 +22,11 @@ export async function HomeData() {
             asset->{
               url
             }
+          },
+          mobileimage{
+            asset->{
+              url
+            }
           }
         },
         upcomingevents[]{
@@ -124,7 +129,6 @@ export default function Home() {
 
   const { sermons } = sermon;
 
-  console.log(sermons);
   const {
     carousel,
     organizations,
@@ -137,6 +141,7 @@ export default function Home() {
     // sermon,
   } = main;
 
+  console.log(carousel);
   const dates = sermons.map((item) => item.date);
 
   //parse dates into computer format

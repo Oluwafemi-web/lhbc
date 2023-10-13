@@ -505,7 +505,7 @@
   }
 
   .copyrightContainer {
-    width: 100%;
+    width: 100vw;
     height: 3.5rem;
     background: #020d1e;
     display: flex;

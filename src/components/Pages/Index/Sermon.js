@@ -18,7 +18,7 @@ export default function Sermon(props) {
       <div className={classes.sermon}>
         <h3 className={classes.sermonHeader}>
           <FaBible className={classes["fa-book-bible sermonIcon"]} />
-          TODAY'S SERMON
+          LATEST SERMON
           <FaBible className={classes["fa-book-bible sermonIcon"]} />
         </h3>
         <div className={classes.sermonContainer}>

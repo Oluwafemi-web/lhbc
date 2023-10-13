@@ -23,6 +23,7 @@ export default function Carousel(props) {
             img={item.image.asset.url}
             // heading={item.heading[0]?.children[0]?.text || ""} // Access nested structure safely
             heading={item.heading}
+            mobileimg={item.mobileimage.asset.url}
             subheading={item.subheading}
             description={item.description}
           />

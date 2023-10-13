@@ -24,8 +24,6 @@ body {
   /* overflow: scroll; */
   position: relative;
   left: 0;
-  /* background: linear-gradient(#011635be, #011635be),
-    url(../images/Placeholder4.jpeg) fixed; */
 }
 .banner {
   width: 100%;
@@ -38,10 +36,12 @@ body {
   padding: 0.5rem 4rem;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  /* background: linear-gradient(#011635be, #011635be),
-    url(../images/Placeholder4.jpeg) fixed; */
+  height: 80vh !important;
 }
-
+.headtext {
+  /* position: fixed; */
+  width: 80%;
+}
 .bannerFirstText {
   color: #ffd700;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

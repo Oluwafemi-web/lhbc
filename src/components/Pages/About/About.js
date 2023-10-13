@@ -17,6 +17,11 @@ export async function AboutData() {
             asset->{
               url
             }
+          },
+          mobileimage{
+            asset->{
+              url
+            }
           }
         },
         aboutus[]{

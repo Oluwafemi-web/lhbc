@@ -25,6 +25,7 @@ export default defineType({
           fields: [
             {type: 'string', name: 'title'},
             {type: 'image', name: 'bannerimage'},
+            {type: 'image', name: 'mobileimage'},
             {type: 'array', name: 'numbers', of: [{type: 'string'}]},
             {type: 'email', name: 'email'},
           ],

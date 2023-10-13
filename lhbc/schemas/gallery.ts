@@ -24,6 +24,7 @@ export default defineType({
           name: 'banner',
           fields: [
             {type: 'image', name: 'image'},
+            {type: 'image', name: 'mobileimage'},
             {type: 'string', name: 'pagetitle'},
           ],
         },

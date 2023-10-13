@@ -1,5 +1,9 @@
 import classes from "../../../css/gallery.module.css";
+import { useMediaQuery } from "react-responsive";
+
 export default function BannerImg(props) {
+  const mobile = useMediaQuery({ maxWidth: 576 });
+
   return (
     props.bannerDetails &&
     props.bannerDetails.map((item, index) => (
@@ -7,7 +11,9 @@ export default function BannerImg(props) {
         className={classes.galleryBanner}
         key={index}
         style={{
-          background: `linear-gradient(#00000081, #00000081), url(${item.image.asset.url})`,
+          background: mobile
+            ? `linear-gradient(rgba(1, 22, 53, 0.745), rgba(1, 22, 53, 0.745)), url(${item.mobileimage.asset.url})`
+            : `linear-gradient(rgba(1, 22, 53, 0.745), rgba(1, 22, 53, 0.745)), url(${item.image.asset.url})`,
         }}
       >
         <h3 className={classes.galleryBannerMainText}>{item.pagetitle}</h3>

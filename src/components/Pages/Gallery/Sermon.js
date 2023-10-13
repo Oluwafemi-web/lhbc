@@ -19,6 +19,11 @@ export async function SermonData() {
             asset->{
               url
             }
+          },
+          mobileimage{
+            asset->{
+              url
+            }
           }
         },
         sermons[]{

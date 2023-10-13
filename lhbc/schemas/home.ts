@@ -27,6 +27,7 @@ export default defineType({
             {type: 'array', name: 'subheading', of: [{type: 'block'}]},
             {type: 'array', name: 'description', of: [{type: 'block'}]},
             {type: 'image', name: 'image'},
+            {type: 'image', name: 'mobileimage'},
           ],
         },
       ],

@@ -2,7 +2,7 @@ import classes from "../../css/about.module.css";
 import { FaCalendarPlus, FaLocationArrow, FaMapPin } from "react-icons/fa";
 import { useTimer } from "react-timer-hook";
 function getDayWithSuffix(day) {
-  if (day >= 11 && day <= 13) {
+  if (day >= 11 && day <= 20) {
     return day + "th";
   }
   switch (day % 10) {
@@ -68,7 +68,7 @@ export default function NextEvent(props) {
       <div className={classes.eventContainer}>
         <div className={classes.eventDetails}>
           <div className={classes.eventMonthDate}>
-            <p className={classes.day}>{getDayWithSuffix(time.getDay())}</p>
+            <p className={classes.day}>{getDayWithSuffix(time.getDate())}</p>
             <p className={classes.month}>{`${
               months[time.getMonth()]
             } ${time.getFullYear()}`}</p>

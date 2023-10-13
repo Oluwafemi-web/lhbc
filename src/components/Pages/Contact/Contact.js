@@ -17,6 +17,11 @@ export async function ContactData() {
               url
             }
           },
+          mobileimage{
+            asset->{
+              url
+            }
+          },
           email,
           numbers
         },

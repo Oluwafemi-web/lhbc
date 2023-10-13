@@ -24,9 +24,8 @@ export default defineType({
           name: 'banner',
           fields: [
             {type: 'image', name: 'image'},
+            {type: 'image', name: 'mobileimage'},
             {type: 'string', name: 'pagetitle'},
-            // {type: 'array', name: 'subheading', of: [{type: 'block'}]},
-            // {type: 'array', name: 'description', of: [{type: 'block'}]},
           ],
         },
       ],
@@ -89,24 +88,24 @@ export default defineType({
         },
       ],
     }),
-    defineField({
-      title: 'Next Event',
-      type: 'array',
-      name: 'nextevent',
-      of: [
-        {
-          type: 'object',
-          name: 'donate',
-          fields: [
-            {type: 'image', name: 'image'},
-            {type: 'string', name: 'title'},
-            // {type: 'array', name: 'description', of: [{type: 'block'}]},
-            {type: 'string', name: 'date'},
-            // {type: 'string', name: 'time'},
-          ],
-        },
-      ],
-    }),
+    // defineField({
+    //   title: 'Next Event',
+    //   type: 'array',
+    //   name: 'nextevent',
+    //   of: [
+    //     {
+    //       type: 'object',
+    //       name: 'donate',
+    //       fields: [
+    //         {type: 'image', name: 'image'},
+    //         {type: 'string', name: 'title'},
+    //         // {type: 'array', name: 'description', of: [{type: 'block'}]},
+    //         {type: 'string', name: 'date'},
+    //         // {type: 'string', name: 'time'},
+    //       ],
+    //     },
+    //   ],
+    // }),
   ],
   preview: {
     select: {

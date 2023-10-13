@@ -1,7 +1,10 @@
 import classes from "../../../css/style.module.css";
 import { Link } from "react-router-dom";
 import { PortableText } from "@portabletext/react";
+import { useMediaQuery } from "react-responsive";
 export default function SliderItems(props) {
+  const mobile = useMediaQuery({ maxWidth: 576 });
+
   const h3tags = {
     types: {
       block: ({ value }) => {
@@ -34,20 +37,21 @@ export default function SliderItems(props) {
     <div
       className={classes.banner}
       style={{
-        background: `
-            linear-gradient(rgba(1, 22, 53, 0.745), rgba(1, 22, 53, 0.745)),
-            url(${props.img})
-          `,
+        background: mobile
+          ? `linear-gradient(rgba(1, 22, 53, 0.745), rgba(1, 22, 53, 0.745)), url(${props.mobileimg})`
+          : `linear-gradient(rgba(1, 22, 53, 0.745), rgba(1, 22, 53, 0.745)), url(${props.img})`,
       }}
     >
-      <PortableText value={props.heading} components={h3tags} />
-      <PortableText value={props.subheading} components={h1tags} />
-      <PortableText value={props.description} components={ptags} />
-      <button className={classes.bannerButton}>
-        <Link to="/contact" className={classes.bannerButton}>
-          CONTACT US
-        </Link>
-      </button>
+      <div className={classes.headtext}>
+        <PortableText value={props.heading} components={h3tags} />
+        <PortableText value={props.subheading} components={h1tags} />
+        <PortableText value={props.description} components={ptags} />
+        <button className={classes.bannerButton}>
+          <Link to="/contact" className={classes.bannerButton}>
+            CONTACT US
+          </Link>
+        </button>
+      </div>
     </div>
   );
 }
