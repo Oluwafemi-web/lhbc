@@ -813,8 +813,6 @@ body {
     justify-items: center;
     align-items: start;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    position: relative;
-    top: -4rem;
   }
 
   .operationAskContainer {
@@ -7101,4 +7099,10 @@ body {
   font-weight: bold;
   font-style: italic;
   color: #8b0000;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    position: relative;
+    top: -20vh;
+  }
 }
