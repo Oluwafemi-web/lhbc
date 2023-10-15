@@ -813,6 +813,8 @@ body {
     justify-items: center;
     align-items: start;
     padding: 1rem 0.5rem 1rem 0.5rem;
+    position: relative;
+    top: -4rem;
   }
 
   .operationAskContainer {
