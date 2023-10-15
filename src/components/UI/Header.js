@@ -76,6 +76,15 @@ export default function Header() {
               </NavLink>
             </li>
             <li className={classes.headerUl}>
+              <a
+                href="https://www.instagram.com/lhbc_phc/"
+                target="_blank"
+                className={classes.headerGallery}
+              >
+                GALLERY
+              </a>
+            </li>
+            <li className={classes.headerUl}>
               <NavLink
                 to="/sermon"
                 className={({ isActive }) =>
