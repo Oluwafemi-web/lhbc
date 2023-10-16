@@ -26,11 +26,11 @@ export default function OrganizationItems(props) {
       />
       <h5 className={classes["unionHeader"]}>{props.heading}</h5>
       <PortableText value={props.description} components={description} />
-      <p>
+      {/* <p>
         <a href="#" className={classes["unionDetails"]}>
           Read More
         </a>
-      </p>
+      </p> */}
     </motion.div>
   );
 }
