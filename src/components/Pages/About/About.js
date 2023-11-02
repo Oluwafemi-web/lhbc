@@ -38,6 +38,11 @@ export async function AboutData() {
             url
           }
         },
+        deacons{
+          asset->{
+            url
+          }
+        },
         diaconate[]{
           image{
             asset->{
@@ -95,7 +100,7 @@ export default function About() {
     organizations,
     sermon,
     aboutus,
-    diaconate,
+    deacons,
     pastorandwife,
   } = main;
   return (
@@ -103,7 +108,7 @@ export default function About() {
       <BannerImg banner={banner} />
       <AboutContent aboutData={aboutus} />
       <PastorandWife img={pastorandwife.asset.url} />
-      <Diaconate deaconDetails={diaconate} />
+      <Diaconate img={deacons.asset.url} />
       <Organizations organizationDetails={organizations} />
       <NextEvent date={event.date} title={event.name} />
     </>
