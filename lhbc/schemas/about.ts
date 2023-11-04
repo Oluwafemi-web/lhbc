@@ -69,6 +69,22 @@ export default defineType({
       //   },
       // ],
     }),
+    // defineField({
+    //   title: 'Deacons',
+    //   type: 'array',
+    //   name: 'diaconate',
+    //   of: [
+    //     {
+    //       type: 'object',
+    //       name: 'event',
+    //       fields: [
+    //         {type: 'image', name: 'image'},
+    //         {type: 'string', name: 'name'},
+    //       ],
+    //     },
+    //   ],
+    // }),
+
     defineField({
       title: 'Organizations',
       type: 'array',
