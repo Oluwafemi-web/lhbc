@@ -3057,7 +3057,7 @@
     text-align: right;
     color: #e8e8e8;
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
     margin: 0rem 0.3rem 0rem 0rem;
   }
@@ -9313,4 +9313,5 @@
 .pastor-and-wife-text {
   font-family: "inter", sans-serif;
   font-style: italic;
+  text-align: center;
 }
