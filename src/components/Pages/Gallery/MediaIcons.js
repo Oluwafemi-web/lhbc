@@ -35,6 +35,22 @@ export default function MediaIcons(props) {
     setShowDuration(true);
   };
 
+  //share function
+
+  const handleShare = async (event) => {
+    event.preventDefault();
+
+    try {
+      await navigator.share({
+        title: props.title,
+        text: props.description,
+        url: props.audio,
+      });
+    } catch (error) {
+      console.error("Error sharing:", error);
+    }
+  };
+
   useEffect(() => {
     audioRef.current.addEventListener("timeupdate", handleTimeUpdate);
     audioRef.current.addEventListener("loadedmetadata", handleLoadedMetadata);
@@ -86,7 +102,7 @@ export default function MediaIcons(props) {
         </a>
       </div>
       <div className={classes.mediaButton}>
-        <a href={props.audio}>
+        <a href={props.audio} onClick={handleShare}>
           <FaShare className={classes["fa-share-nodes"]} />
         </a>
       </div>

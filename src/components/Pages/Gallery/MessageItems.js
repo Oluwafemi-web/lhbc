@@ -25,7 +25,11 @@ export default function MessageItems(props) {
           <span className={classes.messageDateAndMonth}>{props.date}</span>
         </p>
         <PortableText value={props.description} components={description} />
-        <MediaIcons audio={props.audio} />
+        <MediaIcons
+          audio={props.audio}
+          title={props.title}
+          description={props.description}
+        />
       </div>
     </div>
   );
