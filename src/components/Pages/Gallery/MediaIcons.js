@@ -9,12 +9,26 @@ export default function MediaIcons(props) {
   const [duration, setDuration] = useState(0);
   const [showDuration, setShowDuration] = useState(false);
 
+  // Track the active audio element
+  const activeAudioRef = useRef(null);
+
   const toggleAudio = () => {
+    activeAudioRef.current = audioRef.current;
+
+    if (activeAudioRef.current !== audioRef.current) {
+      console.log(true);
+      // Pause the currently playing audio
+      activeAudioRef.current.pause();
+      activeAudioRef.current.currentTime = 0;
+    }
+
     if (isPlaying) {
       audioRef.current.pause();
     } else {
       audioRef.current.play();
+      activeAudioRef.current = audioRef.current;
     }
+
     setIsPlaying(!isPlaying);
   };
 
@@ -56,16 +70,6 @@ export default function MediaIcons(props) {
     audioRef.current.addEventListener("loadedmetadata", handleLoadedMetadata);
     audioRef.current.addEventListener("ended", handleAudioEnd);
     audioRef.current.addEventListener("play", handleAudioPlay);
-
-    // return  () => {
-    //   audioRef.current.removeEventListener("timeupdate", handleTimeUpdate);
-    //   audioRef.current.removeEventListener(
-    //     "loadedmetadata",
-    //     handleLoadedMetadata
-    //   );
-    //   audioRef.current.removeEventListener("ended", handleAudioEnd);
-    //   audioRef.current.removeEventListener("play", handleAudioPlay);
-    // };
   }, []);
 
   const formatTime = (time) => {
