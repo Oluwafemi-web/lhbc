@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import { Analytics } from "@vercel/analytics/react";
 import { Outlet } from "react-router-dom";
 import classes from "../../css/style.module.css";
 import sanityClient from "../../client";
@@ -56,6 +57,7 @@ export default function RootLayout() {
       <Header />
       <div className={classes.main}>
         <Outlet />
+        <Analytics />
       </div>
       <Footer aboutus={aboutus} quicklinks={quicklinks} updates={updates} />
     </>
