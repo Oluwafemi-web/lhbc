@@ -1,11 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import Wrapper from "./components/UI/Wrapper";
-// import Home, { HomeData } from "./components/Pages/Index/Home";
-// import About, { AboutData } from "./components/Pages/About/About";
-// import Blog from "./components/Pages/Blog/Blog";
-// import Sermon, { SermonData } from "./components/Pages/Gallery/Sermon";
-// import Contact, { ContactData } from "./components/Pages/Contact/Contact";
+
 import RootLayout, { GeneralData } from "./components/UI/Root";
 import ErrorPage from "./components/Pages/Error";
 // import sanityClient from "./client";

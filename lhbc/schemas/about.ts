@@ -42,8 +42,7 @@ export default defineType({
             {type: 'image', name: 'image'},
             {type: 'array', name: 'heading', of: [{type: 'block'}]},
             {type: 'array', name: 'description', of: [{type: 'block'}]},
-            // {type: 'string', name: 'date'},
-            // {type: 'string', name: 'time'},
+
           ],
         },
       ],
@@ -58,32 +57,9 @@ export default defineType({
       title: 'Deacons',
       type: 'image',
       name: 'deacons',
-      // of: [
-      //   {
-      //     type: 'object',
-      //     name: 'event',
-      //     fields: [
-      //       {type: 'image', name: 'image'},
-      //       {type: 'string', name: 'name'},
-      //     ],
-      //   },
-      // ],
+
     }),
-    // defineField({
-    //   title: 'Deacons',
-    //   type: 'array',
-    //   name: 'diaconate',
-    //   of: [
-    //     {
-    //       type: 'object',
-    //       name: 'event',
-    //       fields: [
-    //         {type: 'image', name: 'image'},
-    //         {type: 'string', name: 'name'},
-    //       ],
-    //     },
-    //   ],
-    // }),
+
 
     defineField({
       title: 'Organizations',
@@ -101,24 +77,7 @@ export default defineType({
         },
       ],
     }),
-    // defineField({
-    //   title: 'Next Event',
-    //   type: 'array',
-    //   name: 'nextevent',
-    //   of: [
-    //     {
-    //       type: 'object',
-    //       name: 'donate',
-    //       fields: [
-    //         {type: 'image', name: 'image'},
-    //         {type: 'string', name: 'title'},
-    //         // {type: 'array', name: 'description', of: [{type: 'block'}]},
-    //         {type: 'string', name: 'date'},
-    //         // {type: 'string', name: 'time'},
-    //       ],
-    //     },
-    //   ],
-    // }),
+
   ],
   preview: {
     select: {

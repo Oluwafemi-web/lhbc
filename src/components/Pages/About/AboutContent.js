@@ -1,8 +1,6 @@
 import classes from "../../../css/about.module.css";
 import { PortableText } from "@portabletext/react";
 import { motion } from "framer-motion";
-import { FaPlay } from "react-icons/fa";
-import FeaturedSermon from "./FeaturedSermon";
 export default function AboutContent(props) {
   const about = {
     types: {
@@ -52,17 +50,6 @@ export default function AboutContent(props) {
             <PortableText value={item.heading} />
             <PortableText value={item.description} />
           </motion.div>
-          {/* <div className={classes.message}>
-            {props.featured &&
-              props.featured.map((item, index) => (
-                <FeaturedSermon
-                  name={`message${index + 1}`}
-                  title={item.title}
-                  minister={item.preacher}
-                  date={item.date}
-                />
-              ))}
-          </div> */}
         </div>
       </div>
     ))
